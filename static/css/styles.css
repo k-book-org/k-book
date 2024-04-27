@@ -1,0 +1,16 @@
+* {
+    margin: 0;  /* removed units and set to 0 for universal reset */
+    padding: 0;  /* same as above */
+    box-sizing: border-box;
+}
+.textos-header >h1{
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 60px;  /* this is quite large, make sure it's intended */
+    font-weight: Bold;  /* corrected from 'regular' */
+}
+.textos-header >h2{
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 24px;  /* this is quite large, make sure it's intended */
+    font-weight: Medium;  /* corrected from 'regular' */
+}
+

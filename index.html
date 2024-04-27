@@ -3,17 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>K-book</title>
-        <link rel="shortcut icon" href="{{url_for('static', filename='img/unbg_lowres.png')}}" type="image/x-icon">
-        <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}"> 
+        <link rel="shortcut icon" href="static/img/unbg_lowres.png" type="image/x-icon">
+        <link rel="stylesheet" href="static/css/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <script src="https://cdn.tailwindcss.com"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="header " style="background-image: url(&apos;{{url_for('static',filename='img/headder3.jpeg')}}&apos;);">
+        <header class="header ">
             <nav class="nav">
             <a href="#">Comunidad</a>
             <a href="#">Precios</a>
@@ -21,10 +19,10 @@
             <a href="#">Login</a>
             <a href="#">Empieza!</a>
           </nav>
-            <section class="textos-header font-bold">
+            <section class="textos-header">
                 <h1>Aprende a programar como jugando</h1>
                 <h2>Descubre el mundo del código y desbloquea tu potencial creativo paso a paso</h2>
-                <div class="button-container font-bold">
+                <div class="button-container">
                     <a href="/application" class="button-application">Empieza</a>
                 </div>  
             </section>
@@ -35,5 +33,16 @@
                 </svg>
             </div>
         </header>
+        <main>
+            <section class="contenedor about-k-book">
+                <img src="static/img/acerca_de.jpg" alt="" class="imagen about-k-book">
+                <div class="contenido-texto">
+                    <h3>Acerca de K-book</h3>
+                    <p>K-Book es una plataforma de aprendizaje interactiva que revoluciona la enseñanza y el aprendizaje de la programación 
+                        para jóvenes entre 12 y 18 años y docentes. Nuestro objetivo es desmitificar los conceptos de programación y pensamiento 
+                        computacional a través de un método dinámico y accesible.</p>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
