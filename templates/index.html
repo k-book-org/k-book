@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>K-book</title>
+        <link rel="shortcut icon" href="{{url_for('static', filename='img/unbg_lowres.png')}}" type="image/x-icon">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header " style="background-image: url(&apos;{{url_for('static',filename='img/headder3.jpeg')}}&apos;);">
+            <nav class="nav">
+            <a href="#">Comunidad</a>
+            <a href="#">Precios</a>
+            <a href="#">Informacion</a>
+            <a href="#">Login</a>
+            <a href="#">Empieza!</a>
+          </nav>
+            <section class="textos-header font-bold">
+                <h1>Aprende a programar como jugando</h1>
+                <h2>Descubre el mundo del código y desbloquea tu potencial creativo paso a paso</h2>
+                <div class="button-container font-bold">
+                    <a href="/application" class="button-application">Empieza</a>
+                </div>  
+            </section>
+            <div class="wave" style="height: 150px; overflow: hidden;">
+                <svg viewbox="0 0 500 150" preserveaspectratio="none" style="height: 100%; width: 100%;">
+                  <path d="M-5.64,33.06 C86.34,-58.69 315.46,110.05 500.00,49.98 L588.03,174.19 L0.00,150.00 Z"
+                    style="stroke: none; fill: #011E2C;"></path>
+                </svg>
+            </div>
+        </header>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+* {
+    margin: 0;  /* removed units and set to 0 for universal reset */
+    padding: 0;  /* same as above */
+    box-sizing: border-box;
+}
+
+.textos-header {
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 80px;  /* this is quite large, make sure it's intended */
+    font-weight: normal;  /* corrected from 'regular' */
+}
