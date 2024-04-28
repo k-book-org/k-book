@@ -1,16 +1,190 @@
 * {
-    margin: 0;  /* removed units and set to 0 for universal reset */
-    padding: 0;  /* same as above */
+    margin: 0;  
+    padding: 0; 
     box-sizing: border-box;
+    
 }
-.textos-header >h1{
-    font-family: "Archivo Narrow", sans-serif;
-    font-size: 60px;  /* this is quite large, make sure it's intended */
-    font-weight: Bold;  /* corrected from 'regular' */
-}
-.textos-header >h2{
-    font-family: "Archivo Narrow", sans-serif;
-    font-size: 24px;  /* this is quite large, make sure it's intended */
-    font-weight: Medium;  /* corrected from 'regular' */
+/*naV*/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    transition: all 0.5s ease;
 }
 
+.nav-group.left, .nav-group.center, .nav-group.right {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: "Kanit", sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+}
+.nav-group.center li, .nav-group.right li{
+    list-style: none;
+}
+.nav-group.center li a{
+    color:#011E2C;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.nav-group.center li a:hover{
+    padding: 5px 10px;
+    background: #011E2C;
+    color: #ffffff;
+    border-radius: 15px;
+}
+.logo img {
+    height: 100px;
+    width: auto; 
+}
+
+.nav-group.center {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.nav a {
+    font-family: "Archivo Narrow", sans-serif;
+    color: #011E2C;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+.start-button, .login {
+    padding: 6px 12px;
+    text-decoration: none;
+    display: inline-block;
+}
+.login {
+    background: none;
+    color: #011E2C;
+}
+.nav-group.right li a{
+    color:#011E2C;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.nav-group.right li a:hover{
+    padding: 5px 10px;
+    background: #377483;
+    color: #ffffff;
+    border-radius: 15px;
+}
+/*header*/
+.header2 {
+    width: 100%;
+    height: 660px;
+    background: rgb(1,30,44);
+    background: linear-gradient(0deg, rgba(1,30,44,0) 61%, rgba(217,217,217,1) 98%);
+}
+.header {
+    width: 100%;
+    height: 660px;
+    background: rgb(1,30,44);
+    background: linear-gradient(0deg, rgba(1,30,44,1) 15%, rgba(255,255,255,0) 87%), url(../img/headder3.jpeg);
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat; 
+}
+.textos-header {
+    margin-top: -102px;
+    padding: 0 7% 0 7%;
+    display: flex;        
+    flex-direction: column;  
+    justify-content: center; 
+    height: 660px; 
+}
+
+.textos-header > h1 {
+    max-width: 65%;
+    font-family: "Archivo Narrow", sans-serif;
+    color: white !important;
+    font-size: 64px;
+    font-weight: bold;
+}
+.textos-header > h2 {
+    max-width: 50%;
+    font-family: "Archivo Narrow", sans-serif;
+    color: white !important;
+    font-size: 24px;
+    font-weight: normal;
+}
+.button-application {
+    font-family: "Archivo Narrow", sans-serif;
+    font-weight: 500;
+    margin-top: 30px;
+    background-color: #D9D9D9;
+    color: #011E2C;
+    border-radius: 15px;
+    padding: 6px 12px; 
+    font-size: 20px; 
+    text-decoration: none; 
+    display: inline-block; 
+}
+/*General*/
+.contenedor{
+
+    padding: 60px 0;
+    width: 95%;
+    max-width: 85%;
+    margin: auto; 
+    overflow: hidden;
+}
+.titulo{
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 48px;  /* this is quite large, make sure it's intended */
+    font-weight: Bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.parrafo {
+    font-family: "Arvo", serif;
+    font-size: 20px;
+    font-style: normal;
+
+}
+/*About k book*/
+h2.titulo.Acerca-de{
+    margin-bottom: 5%;
+    text-align: left;
+}
+.contenedor-about-k-book-bg {
+    background-color: #011E2C; 
+    width: 100%; 
+    padding: 30px 0; 
+}
+
+.contenedor-about-k-book {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    margin-top: 3%;
+    gap: 8%;
+    width: 100%; 
+    max-width: 75%; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 6%;
+}
+
+
+.imagen.about-k-book {
+    width: 40%;
+    height: 650px; 
+    background-size: cover; 
+    background-position: center;
+    border-radius: 30px;
+}
+
+.contenido-texto {
+    color: #ffffff;
+    width: 45%; 
+}
