@@ -278,3 +278,104 @@ h2.titulo.Acerca-de{
     font-size: 1em;
     color: #D9D9D9;
 }
+
+/*Tabla de precios*/
+.contenedor-TP-bg {
+    
+    background-color: #011E2C;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.contenedor-TP {
+
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+    background-color: #011E2C;
+    color: #fff;
+    margin: 0 auto;
+    padding: 0;
+    flex-direction: row;
+}
+
+.titulo.TP {
+    margin-top: 5%;
+    font-size: 48px;
+        font-weight: 600;
+    color: #fff;
+}
+
+.Precio {
+    background-color: #011E2C;
+    padding: 35px;
+    max-width: 30%;
+    max-height: 570px;
+    margin: 10px;
+    text-align: left;
+    border:1px solid #fff;
+    border-radius: 32px;
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.img-container img {
+
+    width: 310px;
+    height: 220px;
+    object-fit: cover;
+    display:block;
+}
+
+.Precio h3 {
+    color: #fff;
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.Precio p {
+    font-family: "Arvo", serif;
+    font-size: 16px;
+    color: #fff;
+    margin: 5px 0;
+}
+
+.button-container {
+    margin: 10px 0;
+    text-align: center !important;
+}
+
+.btn-vm, .btn-contactanos {
+    background-color: #D9D9D9;
+    color: #011E2C;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.btn-vm:hover, .btn-contactanos:hover {
+    background-color: #007BB5;
+}
+
+.astronauta {
+    position: absolute;
+    top: 34px;
+    right: 203px;
+    width: 262px;
+}
