@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K-book</title>
     <link rel="shortcut icon" href="static/img/unbg_lowres.png" type="image/x-icon">
@@ -15,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="static/js/efect.js"></script>
 </head>
 <body>
     <header class="header">
@@ -48,19 +50,88 @@
     <main>
         <div class="contenedor-about-k-book-bg">
             <!-- Contenedor para el fondo -->
-            <section class="contenedor-about-k-book">
+            <section class="contenedor-about-k-book "id="aboutContainer">
                 <div class="imagen about-k-book" style="background-image: url('static/img/acerca_de.jpg');"></div>
                 <div class="contenido-texto">
                     <h2 class="titulo Acerca-de">Acerca de K-book</h2>
                     <p class="parrafo Acerca">K-Book es una plataforma de aprendizaje interactiva que revoluciona la enseñanza y el aprendizaje de la programación para jóvenes entre 12 y 18 años y docentes. Nuestro objetivo es desmitificar los conceptos de programación y pensamiento computacional a través de un método dinámico y accesible.</p>
-                    <div class="button-container">
-                        <a href="#" class="btn-ver-mas">Ver más</a>
+                    <div class="button-container1">
+                        <a id="toggleButton" onclick="toggleIntegrantes()" class="btn-ver-mas">Ver más</a>
                     </div>
                 </div>
             </section>
-            <!-- Separador en zig-zag -->
-           
+            <div class="integrantes" id="integrantes">
+                <h2 class="integrantestext">K-book esta desarrollado por</h2>
+                <div class="gen w-full flex justify-center">
+                <div class="card">
+                    <div class="head">
+                      <div class="circle"></div>
+                      <div class="img">
+                        <img src="/static/img/joaquin.jpg" alt="">
+                      </div>
+                    </div>
+          
+                    <div class="description">
+                      <h3 class="pj font-bold text-xl">Joaquin Eguia</h3>
+                      <h4 class="pjt font-bold">Ciencias de la Computación</h4>
+                      <p class="frase">
+                        <br />
+                        ~/mylife mvn spring-boot:run
+                      </p>
+                    </div>
+                    <div class="codigo">
+                      <h3>Código de alumno</h3>
+                      <h4 class="code">
+                        u202213539</h4>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="head">
+                      <div class="circle"></div>
+                      <div class="img">
+                        <img src="/static/img/cris1.jpg" alt="">
+                      </div>
+                    </div>
+          
+                    <div class="description">
+                      <h3 class="pj font-bold text-xl">Christian Velasquez</h3>
+                      <h4 class="pjt font-bold">Ciencias de la Computación</h4>
+                      <p class="frase">
+                        fan de la coca cola y preguntar cosas raras
+                      </p>
+                    </div>
+                    <div class="codigo">
+                      <h3>Código de alumno</h3>
+                      <h4 class="code">
+                        u202256666</h4>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="head">
+                      <div class="circle"></div>
+                      <div class="img">
+                        <img src="/static/img/cris1.jpg" alt="">
+                      </div>
+                    </div>
+          
+                    <div class="description">
+                      <h3 class="pj font-bold text-xl">Alessandro Medina</h3>
+                      <h4 class="pjt font-bold">Ciencias de la Computación</h4>
+                      <p class="frase">
+                        existe luego pienso
+                      </p>
+                    </div>
+                    <div class="codigo">
+                      <h3>Código de alumno</h3>
+                      <h4 class="code">
+                        u2022135346</h4>
+                    </div>
+                  </div>
+                </div>
+            </div>
         </div>
+        
+        
         <div class="contenedor-AIC-bg">
                     <section class="contenedor AIC_k-book">
                         <h2 class="titulo AIC">Aprende, interactúa y crece con K-book</h2>
@@ -89,8 +160,8 @@
                             </div>
                         </div>
                     </section>
-                </div>
-                <div class="contenedor-TP-bg">
+        </div>
+        <div class="contenedor-TP-bg">
                     <h2 class="titulo TP">Tabla de Precios</h2>
                     <section class="contenedor-TP">
                         <div class="Precio estudiante">
@@ -140,7 +211,9 @@
                         </div>
                         <img src="static/img/p_flotando.png" alt="Astronauta" class="astronauta">
                     </section>
-                </div>   
+        </div>   
     </main>
+
 </body>
+
 </html>

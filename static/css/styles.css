@@ -161,8 +161,12 @@ h2.titulo.Acerca-de{
     background-color: #011E2C;
     width: 100%;
     padding: 30px 0;
-    position: relative; /* Asegura que el triángulo se posicione correctamente */
+    position: relative;
+    transition: height 0.5s ease-in-out;
 }
+
+
+
 
 .contenedor-about-k-book {
     display: flex;
@@ -201,8 +205,147 @@ h2.titulo.Acerca-de{
     font-size: 20px; 
     text-decoration: none; 
     display: inline-block; 
+    cursor: pointer;
+    user-select: none;
 }
 
+/*Integranbtes*/
+.integrantes{
+    display: none;
+    font-family: "Archivo Narrow", sans-serif;
+    color: #fff;
+    
+}
+.integrantestext{
+    font-size: 42px !important;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+    .card {
+        margin-bottom: 30% !important; /* Margen negativo en la parte superior e inferior, sin modificar el margen lateral */
+    }
+    .integrantes .card .description p{
+        font-size: 14px;
+    }
+
+    .integrantes .card .description h3{
+        color: #2e0f32;
+        font-size: 16px;
+    }
+    .integrantes .card .description h4{
+        color: #4d1f3b;
+        font-size: 15px;
+    }
+    .integrantes .gen{
+
+        padding: 3px 17% 50px 17% !important;
+    }
+    .integrantes .card .head {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .integrantes .card .head .circle {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: #2e0f32;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+    }
+}
+.integrantes .frase{
+    color: #011E2C !important;
+    width: 80%;
+    margin: 0 auto;
+}
+.code{
+    color: #011E2C;
+}
+.integrantes .gen{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 20% 20px 20%;
+}
+.integrantes .card {
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 3.2%; /* Espacio entre las tarjetas */
+    transition: 0.5s;
+    margin-bottom: 8%;
+    box-shadow:  0 0 5px #fff;
+}
+.integrantes .card:hover {
+    box-shadow: 0 5px 20px #377483;
+    transform: translateY(-15px);
+}
+.integrantes .card .head{
+    height: 125px;
+    width: 100%;
+    position:  relative;
+}
+.integrantes .card .head .circle{
+    position:absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #011E2C;
+    bottom:0;
+}
+.integrantes .card .head .img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    bottom: -30%;
+    left: 50%;
+    transform:  translate(-50%);
+}
+.integrantes .card .head .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.integrantes .card .description {
+    height: 200px;
+    padding: 40px 20px 20px 20px;
+    border-bottom: solid 1px #011E2C;
+    text-align: center;
+
+}
+.integrantes .card .description h3{
+    color: #011E2C;
+}
+.integrantes .card .description h4{
+    color: #011E2C;
+}
+.integrantes .card .description p{
+    text-align: center;
+
+
+    margin-top: 3%;
+}
+.integrantes .card .codigo{
+    height: 200px;
+    padding: 8px 20px 20px 20px;
+    text-align: center;
+}
+.integrantes .card .codigo h3{
+    color: #011E2C;
+}
 /*AIC*/
 .titulo.AIC {
     color: #011E2C;
