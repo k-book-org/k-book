@@ -37,33 +37,79 @@ function toggleIntegrantes() {
 document.addEventListener('DOMContentLoaded', (event) => {
     let slider = document.querySelector('.slider-contenedor');
     let sliderItems = document.querySelectorAll('.slider-test');
-    let contador = 1;
+    let dots = document.querySelectorAll('.dot');
+    let contador = 0;
     let tamW = sliderItems[0].clientWidth;
     let intervalo = 5000;
 
-    // Duplica los elementos para un deslizamiento continuo
+    // Clona los elementos para un deslizamiento continuo
     let sliderLength = sliderItems.length;
     for (let i = 0; i < sliderLength; i++) {
         let clone = sliderItems[i].cloneNode(true);
         slider.appendChild(clone);
     }
 
-    function slides() {
+    function updateSliderPosition() {
         slider.style.transform = `translateX(${-tamW * contador}px)`;
         slider.style.transition = 'transform 0.5s ease-in-out';
+        updateDots();
+    }
 
+    function updateDots() {
+        dots.forEach((dot, index) => {
+            dot.classList.remove('active');
+            if (index === contador % sliderLength) {
+                dot.classList.add('active');
+            }
+        });
+    }
+
+    function slides() {
         contador++;
+        updateSliderPosition();
 
-        if (contador === sliderItems.length + 1) {
+        if (contador === sliderItems.length) {
             setTimeout(() => {
                 slider.style.transition = 'none';
                 slider.style.transform = `translateX(0px)`;
-                contador = 1;
+                contador = 0;
+                updateDots();
             }, 500); // Ajusta el tiempo para que coincida con la duración de la transición
         }
     }
 
-    setInterval(slides, intervalo);
+    let autoSlide = setInterval(slides, intervalo);
+    const nextBtn = document.querySelector('.flecha-der');
+    const prevBtn = document.querySelector('.flecha-izq');
+
+    nextBtn.addEventListener('click', () => {
+        clearInterval(autoSlide);
+        slides();
+        autoSlide = setInterval(slides, intervalo);
+    });
+
+    prevBtn.addEventListener('click', () => {
+        clearInterval(autoSlide);
+        contador = (contador === 0) ? sliderItems.length - 1 : contador - 1;
+        updateSliderPosition();
+        autoSlide = setInterval(slides, intervalo);
+    });
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            clearInterval(autoSlide);
+            contador = index;
+            updateSliderPosition();
+            autoSlide = setInterval(slides, intervalo);
+        });
+    });
+
+    window.addEventListener('resize', () => {
+        tamW = sliderItems[0].clientWidth;
+        updateSliderPosition();
+    });
 });
+
+
 
 
