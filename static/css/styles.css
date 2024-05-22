@@ -431,6 +431,7 @@ h2.titulo.Acerca-de{
     padding: 20px;
     text-align: center;
     position: relative;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 19px 2px;
 }
 
 .contenedor-TP {
@@ -446,6 +447,7 @@ h2.titulo.Acerca-de{
     margin: 0 auto;
     padding: 0;
     flex-direction: row;
+    margin-bottom: 3%;
 }
 
 .titulo.TP {
@@ -623,3 +625,92 @@ h2.titulo.Acerca-de{
     background-color: #D9D9D9;
     outline: 4px solid #011E2C;
 }
+/*Contacto*/
+.contenedor-contacto-bg {
+    background-color: #377483;
+    padding: 50px 0;
+}
+
+.contenedor-contacto {
+    width: 70%; /* Increased to make the container wider */
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    gap: 6%;
+    align-items: center; 
+}
+.cabecera {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.titulo-contacto {
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.descripcion-contacto {
+    font-family: "Arvo", serif;
+    font-size: 16px;
+}
+
+.contenido-contacto form {
+    display: flex;
+    flex-direction: column;
+
+}
+.contenido-contacto {
+    flex: 1; /* Allow form to take more space */
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.form-group:last-child {
+    margin-right: 0;
+}
+
+.form-group label {
+    font-family: "Arvo", serif;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff; /* Ensure text is white for readability */
+}
+button[type="submit"] {
+    font-family: "Archivo Narrow", sans-serif;
+    align-self: flex-end;
+    padding: 5px 24px;
+    border: none;
+    border-radius: 11px;
+    background-color: #fff;
+    color: #011E2C;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #ddd;
+}
+
+
