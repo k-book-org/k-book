@@ -743,7 +743,7 @@ button[type="submit"]:hover {
     max-width: 70%;
 }
 .image-container img {
-    width: 610px;
+    width: 50%;
     height: 449px;
     object-fit: cover;
     border-radius: 10px;
