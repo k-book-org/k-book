@@ -714,3 +714,50 @@ button[type="submit"]:hover {
 }
 
 
+/*galeria*/
+.galeria-bg {
+    background-color: #B6C8D2;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the gallery title and container */
+}
+
+.galeria-title {
+    text-align: center;
+    font-family: "Archivo Narrow", sans-serif;
+    color: #011E2C;
+    font-size: 48px;
+    padding: 7% 0; 
+}
+.image-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10%;
+    margin-bottom: 5%;
+}
+.contenedor-galeria{
+    max-width: 70%;
+}
+.image-container img {
+    width: 610px;
+    height: 449px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.image-description{
+    color: #011E2C;
+}
+.image-description h2{
+    font-family: "Archivo Narrow", sans-serif;
+    margin-bottom: 2%;
+    font-size: 30px;
+    
+}
+
+.image-description p{
+    font-family: "Arvo", serif;
+}
