@@ -761,3 +761,55 @@ button[type="submit"]:hover {
 .image-description p{
     font-family: "Arvo", serif;
 }
+/*FAQs*/
+.contenedor-preguntas-bg {
+    background-color: #011E2C;
+
+    color: #ffffff;
+}
+.faq {
+    padding: 5% 0;
+}
+.FAQs {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 700px !important;
+    border-bottom: 2px solid #fff; 
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+.faq h2 {
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 48px;
+    padding: 20px;
+    text-align: center;
+}
+.pregunta {
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pregunta h3 {
+    font-weight: 400;
+    font-size: 1.8rem;
+    padding: 20px 0;
+}
+.respuesta {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+.respuesta p {
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-family: "Arvo", serif;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+.FAQs.active .respuesta {
+    max-height: 300px;
+    transition: max-height 0.5s ease-in;
+}

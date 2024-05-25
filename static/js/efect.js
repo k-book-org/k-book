@@ -110,6 +110,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const faqs = document.querySelectorAll(".FAQs");
+
+    faqs.forEach(faq => {
+        faq.addEventListener("click", () => {
+            faq.classList.toggle("active");
+            const respuesta = faq.querySelector(".respuesta");
+            if (faq.classList.contains("active")) {
+                respuesta.style.maxHeight = respuesta.scrollHeight + "px";
+            } else {
+                respuesta.style.maxHeight = "0";
+            }
+        });
+    });
+});
+
 
 
 
