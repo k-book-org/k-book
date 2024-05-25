@@ -5,12 +5,20 @@
     
 }
 /*naV*/
-.nav {
+.nav1 {
     display: flex;
+    position: fixed;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     transition: all 0.5s ease;
+}
+
+.nav1.active {
+    z-index: 999;
+    background: #fff;
+    box-shadow: 0 0 10px #000;
 }
 
 .nav-group.left, .nav-group.center, .nav-group.right {
@@ -24,32 +32,47 @@
     font-family: "Kanit", sans-serif !important;
     font-weight: 400 !important;
     font-style: normal !important;
+    transition: all 0.3s ease;
 }
-.nav-group.center li, .nav-group.right li{
+
+.logo.wide {
+    width: 100%; /* Make the logo wider */
+}
+
+.logo img.hide {
+    opacity: 0; /* Hide the logo by setting opacity to 0 */
+}
+
+.nav-group.center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+}
+
+.nav-group.center li, .nav-group.right li {
     list-style: none;
 }
-.nav-group.center li a{
-    color:#011E2C;
+
+.nav-group.center li a {
+    color: #011E2C;
     text-decoration: none;
     transition: all 0.5s ease;
 }
-.nav-group.center li a:hover{
+
+.nav-group.center li a:hover {
     padding: 5px 10px;
     background: #011E2C;
     color: #ffffff;
     border-radius: 15px;
 }
+
 .logo img {
     height: 100px;
-    width: auto; 
+    width: auto;
+    transition: opacity 0.3s ease; /* Add transition for smoother effect */
 }
 
-.nav-group.center {
-    flex-grow: 1;
-    justify-content: center;
-}
-
-.nav a {
+.nav1 a {
     font-family: "Archivo Narrow", sans-serif;
     color: #011E2C;
     font-weight: 500;
@@ -63,21 +86,25 @@
     text-decoration: none;
     display: inline-block;
 }
+
 .login {
     background: none;
     color: #011E2C;
 }
-.nav-group.right li a{
-    color:#011E2C;
+
+.nav-group.right li a {
+    color: #011E2C;
     text-decoration: none;
     transition: all 0.5s ease;
 }
-.nav-group.right li a:hover{
+
+.nav-group.right li a:hover {
     padding: 5px 10px;
     background: #377483;
     color: #ffffff;
     border-radius: 15px;
 }
+
 /*header*/
 .header2 {
     width: 100%;
