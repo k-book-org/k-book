@@ -763,7 +763,7 @@ button[type="submit"]:hover {
 }
 /*FAQs*/
 .contenedor-preguntas-bg {
-    background-color: #011E2C;
+    background-color: #377483;
 
     color: #ffffff;
 }
@@ -782,7 +782,7 @@ button[type="submit"]:hover {
 .faq h2 {
     font-family: "Archivo Narrow", sans-serif;
     font-size: 48px;
-    padding: 20px;
+    margin-bottom: 20px;
     text-align: center;
 }
 .pregunta {
@@ -812,4 +812,61 @@ button[type="submit"]:hover {
 .FAQs.active .respuesta {
     max-height: 300px;
     transition: max-height 0.5s ease-in;
+}
+
+/*Exito*/
+.contenedor-exito-bg{
+    background-color: #011E2C;
+}
+.exito{
+    width: 70%; 
+    margin:0 auto;
+    color: #ffffff;
+    padding: 30px 0;
+}
+.exito-titulo h2{
+    width: 60%;
+    margin:0 auto;
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 48px;
+    
+    text-align: center;
+    padding: 30px 0;
+}
+.casos-exito{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0;
+    align-items: center;
+    gap: 25px;
+}
+.contenedor-columnas{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.casos-exito img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.exito-titulo p {
+    font-family: "Arvo", serif;
+    width: 55%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.texto-caso{
+    font-size: 14px ;
+
+}
+.texto-caso h3{
+    font-family: "Archivo Narrow", sans-serif;
+}
+
+.texto-caso p{
+    font-family: "Arvo", serif;
 }
