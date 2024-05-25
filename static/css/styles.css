@@ -431,7 +431,6 @@ h2.titulo.Acerca-de{
     padding: 20px;
     text-align: center;
     position: relative;
-    box-shadow: rgba(0, 0, 0, 0.20) 0px 19px 2px;
 }
 
 .contenedor-TP {
@@ -629,6 +628,8 @@ h2.titulo.Acerca-de{
 .contenedor-contacto-bg {
     background-color: #377483;
     padding: 50px 0;
+    z-index: 1;
+    position: relative;
 }
 
 .contenedor-contacto {
@@ -636,6 +637,7 @@ h2.titulo.Acerca-de{
     margin: 0 auto;
     color: white;
     display: flex;
+    margin-top: 20px;
     gap: 6%;
     align-items: center; 
 }
@@ -699,8 +701,9 @@ h2.titulo.Acerca-de{
 button[type="submit"] {
     font-family: "Archivo Narrow", sans-serif;
     align-self: flex-end;
-    padding: 5px 24px;
+    padding: 5px 30px;
     border: none;
+    font-weight: bold;
     border-radius: 11px;
     background-color: #fff;
     color: #011E2C;
@@ -729,7 +732,17 @@ button[type="submit"]:hover {
     font-family: "Archivo Narrow", sans-serif;
     color: #011E2C;
     font-size: 48px;
+
+}
+.galeria-titulo{
     padding: 7% 0; 
+}
+.galeria-subtitle{
+    width: 35%;
+    text-align: center;
+    margin-top: 20px!important;
+    margin: 0 auto;
+    font-family: "Arvo", serif;
 }
 .image-container{
     display: flex;
@@ -815,43 +828,31 @@ button[type="submit"]:hover {
 }
 
 /*Exito*/
-.contenedor-exito-bg{
+.contenedor-exito-bg {
     background-color: #011E2C;
+    width: 100%;
+    z-index: 2;     
+    position: relative;
+    min-height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 19px 2px;
 }
-.exito{
+
+.exito {
     width: 70%; 
-    margin:0 auto;
+    margin: 0 auto;
     color: #ffffff;
     padding: 30px 0;
 }
-.exito-titulo h2{
+
+.exito-titulo h2 {
     width: 60%;
-    margin:0 auto;
+    margin: 0 auto;
     font-family: "Archivo Narrow", sans-serif;
     font-size: 48px;
-    
     text-align: center;
     padding: 30px 0;
 }
-.casos-exito{
-    display: flex;
-    flex-direction: row;
-    padding: 30px 0;
-    align-items: center;
-    gap: 25px;
-}
-.contenedor-columnas{
-    margin-top: 70px;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-}
-.casos-exito img{
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
-    border-radius: 15px;
-}
+
 .exito-titulo p {
     font-family: "Arvo", serif;
     width: 55%;
@@ -859,14 +860,60 @@ button[type="submit"]:hover {
     margin: 0 auto;
     margin-bottom: 30px;
 }
-.texto-caso{
-    font-size: 14px ;
 
+.contenedor-carrusel {
+    position: relative;
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
 }
-.texto-caso h3{
+
+.carrusel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.casos-exito {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0;
+    align-items: center;
+    gap: 25px;
+}
+
+.casos-exito img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.next, .prev {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    filter: invert(100%) brightness(200%); /* Change to white */
+    pointer-events: auto;
+}
+.prev {
+    transform: scaleX(-1);
+}
+.texto-caso {
+    font-size: 14px;
+}
+
+.texto-caso h3 {
     font-family: "Archivo Narrow", sans-serif;
 }
 
-.texto-caso p{
+.texto-caso p {
+    margin-top: 10px;
     font-family: "Arvo", serif;
+}
+
+.exitos-contenedor{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
 }

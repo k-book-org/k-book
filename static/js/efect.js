@@ -109,6 +109,59 @@ document.addEventListener('DOMContentLoaded', (event) => {
         updateSliderPosition();
     });
 });
+document.addEventListener('DOMContentLoaded', (event) => {
+    let slider = document.querySelector('.carrusel');
+    let sliderItems = document.querySelectorAll('.casos-exito');
+    let contador = 0;
+    let tamW = sliderItems[0].clientWidth;
+    let intervalo = 5000;
+
+    // Clona los elementos para un deslizamiento continuo
+    let sliderLength = sliderItems.length;
+    for (let i = 0; i < sliderLength; i++) {
+        let clone = sliderItems[i].cloneNode(true);
+        slider.appendChild(clone);
+    }
+
+    function updateSliderPosition() {
+        slider.style.transform = `translateX(${-tamW * contador}px)`;
+        slider.style.transition = 'transform 0.5s ease-in-out';
+    }
+
+    function slides() {
+        contador++;
+        updateSliderPosition();
+
+        if (contador === sliderItems.length) {
+            setTimeout(() => {
+                slider.style.transition = 'none';
+                slider.style.transform = `translateX(0px)`;
+                contador = 0;
+            }, 500); // Ajusta el tiempo para que coincida con la duración de la transición
+        }
+    }
+    let autoSlide = setInterval(slides, intervalo);
+    const nextBtn = document.querySelector('.next');
+    const prevBtn = document.querySelector('.prev');
+
+    nextBtn.addEventListener('click', () => {
+        clearInterval(autoSlide);
+        slides();
+        autoSlide = setInterval(slides, intervalo);
+    });
+
+    prevBtn.addEventListener('click', () => {
+        clearInterval(autoSlide);
+        contador = (contador === 0) ? sliderItems.length - 1 : contador - 1;
+        updateSliderPosition();
+        autoSlide = setInterval(slides, intervalo);
+    });
+
+    window.addEventListener('resize', () => {
+        tamW = sliderItems[0].clientWidth;
+        updateSliderPosition();
+    });
+});
 
 document.addEventListener("DOMContentLoaded", () => {
     const faqs = document.querySelectorAll(".FAQs");
@@ -125,6 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
 
 
 
