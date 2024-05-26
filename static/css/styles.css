@@ -944,3 +944,68 @@ button[type="submit"]:hover {
     align-items: center;
     max-width: 100%;
 }
+
+/*footer*/
+footer {
+    background-color: #011E2C;
+    color: #ffffff;
+    padding: 0 0 50px;
+    text-align: center;
+    position: relative; /* Ensure the footer is positioned relative for absolute positioning of back-to-top */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative; /* Relative positioning to contain the absolute positioned back-to-top */
+}
+
+.back-to-top {
+    position: absolute; /* Absolutely position the back-to-top button */
+    top: -25px; /* Position it slightly above the footer */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Correct centering */
+    margin-bottom: 20px; /* Margin for spacing */
+}
+
+.back-to-top img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    transform: rotate(270deg); /* Rotate the arrow to point up */
+}
+
+.social-media h2 {
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom p {
+    text-align: right;
+    font-size: 12px;
+    font-family: "Arvo", serif;
+    font-weight: 300;
+}
+
