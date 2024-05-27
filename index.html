@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K-book</title>
     <link rel="shortcut icon" href="static/img/unbg_lowres.png" type="image/x-icon">
     <link rel="stylesheet" href="static/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="static/js/efect.js"></script>
 </head>
+
 <body>
-    <header class="header">
+    <header class="header" id="top">
         <div class="header2">
-            <nav class="nav">
+            <nav class="nav1">
                 <div class="nav-group left">
-                    <a class="logo">
+                    <a class="logo" href="#top">
                         <img src="static/img/unbg_lowres.png" alt="K-book Logo">
-                        K-book
+                        <p>K-book</p>
                     </a>
                 </div>
                 <div class="nav-group center">
-                    <li><a href="#">Comunidad</a></li>
-                    <li><a href="#">Precios</a></li>
-                    <li><a href="#">Información</a></li>
+                    <li><a href="#community">Comunidad</a></li>
+                    <li><a href="#precios">Precios</a></li>
+                    <li><a href="#informacion">Información</a></li>
                 </div>
                 <div class="nav-group right">
                     <li><a href="#" class="login">Log in</a></li>
@@ -38,7 +47,8 @@
             </nav>
             <section class="textos-header">
                 <h1>Programa como jugando con K-Book: descubre, experimenta y crea</h1>
-                <h2>Descubre el mundo del código con K-Book y desbloquea tu potencial creativo paso a paso, con guía experta y apoyo constante.</h2>
+                <h2>Descubre el mundo del código con K-Book y desbloquea tu potencial creativo paso a paso, con guía
+                    experta y apoyo constante.</h2>
                 <div class="button-container1">
                     <a href="#" class="button-application">Empieza!</a>
                 </div>
@@ -48,99 +58,415 @@
     <main>
         <div class="contenedor-about-k-book-bg">
             <!-- Contenedor para el fondo -->
-            <section class="contenedor-about-k-book">
+            <section class="contenedor-about-k-book " id="aboutContainer">
                 <div class="imagen about-k-book" style="background-image: url('static/img/acerca_de.jpg');"></div>
                 <div class="contenido-texto">
                     <h2 class="titulo Acerca-de">Acerca de K-book</h2>
-                    <p class="parrafo Acerca">K-Book es una plataforma de aprendizaje interactiva que revoluciona la enseñanza y el aprendizaje de la programación para jóvenes entre 12 y 18 años y docentes. Nuestro objetivo es desmitificar los conceptos de programación y pensamiento computacional a través de un método dinámico y accesible.</p>
-                    <div class="button-container">
-                        <a href="#" class="btn-ver-mas">Ver más</a>
+                    <p class="parrafo Acerca">K-Book es una plataforma de aprendizaje interactiva que revoluciona la
+                        enseñanza y el aprendizaje de la programación para jóvenes entre 12 y 18 años y docentes.
+                        Nuestro objetivo es desmitificar los conceptos de programación y pensamiento computacional a
+                        través de un método dinámico y accesible.</p>
+                    <div class="button-container1">
+                        <a id="toggleButton" onclick="toggleIntegrantes()" class="btn-ver-mas">Ver más</a>
                     </div>
                 </div>
             </section>
-            <!-- Separador en zig-zag -->
-           
+            <div class="integrantes">
+                <h2 class="integrantestext">K-book esta desarrollado por</h2>
+                <div class="gen w-full flex justify-center">
+                    <div class="card">
+                        <div class="head">
+                            <div class="circle"></div>
+                            <div class="img">
+                                <img src="/static/img/joaquin.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="description">
+                            <h3 class="pj font-bold text-xl">Joaquin Eguia</h3>
+                            <h4 class="pjt font-bold">Ciencias de la Computación</h4>
+                            <p class="frase">
+                                <br />
+                                ~/mylife mvn spring-boot:run
+                            </p>
+                        </div>
+                        <div class="codigo">
+                            <h3>Código de alumno</h3>
+                            <h4 class="code">
+                                u202213539</h4>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="head">
+                            <div class="circle"></div>
+                            <div class="img">
+                                <img src="/static/img/cris1.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="description">
+                            <h3 class="pj font-bold text-xl">Christian Velasquez</h3>
+                            <h4 class="pjt font-bold">Ciencias de la Computación</h4>
+                            <p class="frase">
+                                fan de la coca cola y preguntar cosas raras
+                            </p>
+                        </div>
+                        <div class="codigo">
+                            <h3>Código de alumno</h3>
+                            <h4 class="code">
+                                u202218075</h4>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="head">
+                            <div class="circle"></div>
+                            <div class="img">
+                                <img src="/static/img/alessandro.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="description">
+                            <h3 class="pj font-bold text-xl">Alessandro Medina</h3>
+                            <h4 class="pjt font-bold">Ciencias de la Computación</h4>
+                            <p class="frase">
+                                I can do All things. 30 🏀🌩
+                            </p>
+                        </div>
+                        <div class="codigo">
+                            <h3>Código de alumno</h3>
+                            <h4 class="code">
+                                u202216661</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="contenedor-AIC-bg">
-                    <section class="contenedor AIC_k-book">
-                        <h2 class="titulo AIC">Aprende, interactúa y crece con K-book</h2>
-                        <p class="parrafo AIC">Domina la programación con tutoriales interactivos y una comunidad activa y lista para ayudarte. K-Book te ofrece cursos para más de 10 lenguajes, ejercicios prácticos y un espacio para discutir y resolver dudas juntos.</p>
-                        <div class="galeria-k-book">
-                            <div class="galeria-k">
-                                <img src="static/img/tutos_prog.jpeg" alt="">
-                                <div class="texto-sobre-imagen">
-                                    <h3>Tutoriales Interactivos</h3>
-                                    <p>Avanza a tu ritmo con tutoriales desde lo básico hasta lo avanzado, diseñados para mejorar tu comprensión y habilidades de programación.</p>
+            <section class="contenedor AIC_k-book">
+                <h2 class="titulo AIC">Aprende, interactúa y crece con K-book</h2>
+                <p class="parrafo AIC">Domina la programación con tutoriales interactivos y una comunidad activa y lista
+                    para ayudarte. K-Book te ofrece cursos para más de 10 lenguajes, ejercicios prácticos y un espacio
+                    para discutir y resolver dudas juntos.</p>
+                <div class="galeria-k-book">
+                    <div class="galeria-k">
+                        <img src="static/img/tutos_prog.jpeg" alt="">
+                        <div class="texto-sobre-imagen">
+                            <h3>Tutoriales Interactivos</h3>
+                            <p>Avanza a tu ritmo con tutoriales desde lo básico hasta lo avanzado, diseñados para
+                                mejorar tu comprensión y habilidades de programación.</p>
+                        </div>
+                    </div>
+                    <div class="galeria-k">
+                        <img src="static/img/comunidad_prg.jpeg" alt="">
+                        <div class="texto-sobre-imagen">
+                            <h3>Comunidad Activa</h3>
+                            <p>Comunidad para hacer preguntas, compartir conocimientos y aprender de otros. Una red
+                                ideal para enriquecer tu aprendizaje.</p>
+                        </div>
+                    </div>
+                    <div class="galeria-k">
+                        <img src="static/img/ejer_practico.jpeg" alt="">
+                        <div class="texto-sobre-imagen">
+                            <h3>Ejercicios prácticos</h3>
+                            <p>Amplia variedad de ejercicios para que sigas aprendiendo y nunca pierdas la motivación,
+                                siempre hay algo nuevo que aprender.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="comentarios-contenedor">
+                <img class="flecha-izq" src="static/img/next.png" alt="">
+                <div class="carousel-container">
+                    <section class="content-comentarios">
+                        <div class="slider-contenedor">
+                            <div class="slider-test">
+                                <div class="titular">
+                                    <img class="imgconte" src="static/img/GILBERT.png">
+                                    <h3>Gilbert Bougainvillea</h3>
+                                </div>
+                                <div class="textoC">
+                                    <p>- ¿Nivel de ingles? </p>
+                                    <p>- Muy bueno</p>
+                                    <p>- Traduzca “El gato se cayó en el agua y se ahogó”</p>
+                                    <p>- the cat cataplum in the water glu glu glu and not más miau miau </p>
                                 </div>
                             </div>
-                            <div class="galeria-k">
-                                <img src="static/img/comunidad_prg.jpeg" alt="">
-                                <div class="texto-sobre-imagen">
-                                    <h3>Comunidad Activa</h3>
-                                    <p>Comunidad para hacer preguntas, compartir conocimientos y aprender de otros. Una red ideal para enriquecer tu aprendizaje.</p>
+                            <div class="slider-test">
+                                <div class="titular">
+                                    <img class="imgconte" src="static/img/ariadna.jpeg">
+                                    <h3>Ariadna Yaun</h3>
                                 </div>
+                                <p class="textoC">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                    nesciunt rem distinctio obcaecati itaque suscipit omnis aperiam perferendis officiis
+                                    quia voluptate ipsam, quaerat accusamus eum in ab id laudantium aliquam.</p>
                             </div>
-                            <div class="galeria-k">
-                                <img src="static/img/ejer_practico.jpeg" alt="">
-                                <div class="texto-sobre-imagen">
-                                    <h3>Ejercicios prácticos</h3>
-                                    <p>Amplia variedad de ejercicios para que sigas aprendiendo y nunca pierdas la motivación, siempre hay algo nuevo que aprender.</p>
+                            <div class="slider-test">
+                                <div class="titular">
+                                    <img class="imgconte" src="static/img/Valery.jpeg">
+                                    <h3>Valery Cansino</h3>
                                 </div>
+                                <p class="textoC">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum,
+                                    libero. Placeat architecto labore tempore accusantium non sint voluptatum nihil
+                                    doloribus, cumque quam ducimus asperiores officiis blanditiis illum, corporis
+                                    voluptas ea.</p>
                             </div>
                         </div>
                     </section>
                 </div>
-                <div class="contenedor-TP-bg">
-                    <h2 class="titulo TP">Tabla de Precios</h2>
-                    <section class="contenedor-TP">
-                        <div class="Precio estudiante">
-                            <div class="img-container">
-                                <img src="static/img/p_estudiante.jpg" alt="Estudiante">
+                <img class="flecha-der" src="static/img/next.png" alt="">
+
+            </div>
+            <div class="nav-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+        </div>
+        <div class="contenedor-TP-bg" id="precios">
+            <h2 class="titulo TP">Tabla de Precios</h2>
+            <section class="contenedor-TP">
+                <div class="Precio estudiante">
+                    <div class="img-container">
+                        <img src="static/img/p_estudiante.jpg" alt="Estudiante">
+                    </div>
+                    <h3>Estudiante</h3>
+                    <h3>$ 0.00</h3>
+                    <p>al mes</p>
+                    <div class="button-container">
+                        <a href="#" class="btn-vm">Ver más</a>
+                    </div>
+                    <p>Introducción a la programación</p>
+                    <p>✓ Divertido</p>
+                    <p>✓ Aprende a programar</p>
+                    <p>✓ Comunidad</p>
+                </div>
+                <div class="Precio corporativo">
+                    <div class="img-container">
+                        <img src="static/img/p_corp.jpg" alt="Corporativo">
+                    </div>
+                    <h3>Corporativo</h3>
+                    <h3>$ 200-900</h3>
+                    <p>al año</p>
+                    <div class="button-container">
+                        <a href="#" class="btn-contactanos">Contáctanos</a>
+                    </div>
+                    <p>Introducción a la programación</p>
+                    <p>✓ Divertido</p>
+                    <p>✓ Aprende a programar</p>
+                    <p>✓ Comunidad</p>
+                </div>
+                <div class="Precio pro">
+                    <div class="img-container">
+                        <img src="static/img/headder.jpg" alt="Estudiante Pro">
+                    </div>
+                    <h3>Estudiante Pro</h3>
+                    <h3>$ 5.00</h3>
+                    <p>al mes</p>
+                    <div class="button-container">
+                        <a href="#" class="btn-vm">Ver más</a>
+                    </div>
+                    <p>Repositorios avanzados</p>
+                    <p>✓ Desarrolla videojuegos</p>
+                    <p>✓ Bien explicado</p>
+                    <p>✓ Ejercicios avanzados</p>
+                </div>
+                <img src="static/img/p_flotando.png" alt="Astronauta" class="astronauta">
+            </section>
+        </div>
+        <div class="galeria-bg" id="informacion">
+            <div class="galeria-titulo">
+            <h2 class="galeria-title">Aprende a programar con nosotros</h2>
+            <p class="galeria-subtitle">K-Book te ofrece una experiencia de aprendizaje completa con su comunidad interactiva, documentación visual accesible y un editor de código integrado. Todo lo que necesitas para desarrollar tus habilidades de programación en un solo lugar.</p>
+            </div>
+            <section class="contenedor-galeria">
+                <div class="image-container">
+                    <img src="static/img/img_comunidad.PNG" alt="Comunidad">
+                    <div class="image-description">
+                        <h2>Comunidad</h2>
+                        <p class="desc comuinidad">Un espacio donde los usuarios pueden interactuar, hacer preguntas y
+                            obtener respuestas de otros miembros. Es ideal para compartir conocimientos y resolver dudas
+                            de manera colaborativa.</p>
+                    </div>
+
+                </div>
+                <div class="image-container">
+                    <div class="image-description">
+                        <h2>Vista de la Documentación</h2>
+                        <p class="desc documentacion">Sección donde los usuarios pueden acceder a la documentación de
+                            Kaeli. Presenta información de manera visual y gráfica para facilitar el aprendizaje y
+                            mantener el interés de los estudiantes.</p>
+
+                    </div>
+                    <img src="static/img/img_documentacion.PNG" alt="Documentación">
+
+                </div>
+                <div class="image-container">
+                    <img src="static/img/img_editor.PNG" alt="Editor">
+                    <div class="image-description">
+                        <h2>Editor de Código</h2>
+                        <p class="desc editor">Herramienta integrada donde los usuarios pueden escribir, probar y
+                            depurar su código. Está dividido en secciones para facilitar el acceso a la documentación,
+                            ejercicios y la consola, permitiendo un flujo de trabajo más eficiente.</p>
+
+
+                    </div>
+
+            </section>
+        </div>
+        <div class="contenedor-preguntas-bg">
+            <section class="faq">
+                <h2>Preguntas frecuentes</h2>
+                <div class="FAQs">
+                    <div class="pregunta">
+                        <h3>¿Qué es K-book?</h3>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path 
+                            d="M3 3L21 21L39 3"
+                            stroke="white"
+                            stroke-width="7"
+                            stroke-linecap="round"
+                            />
+                        </svg>
+                    </div>
+                    <div class="respuesta">
+                        <p>K-Book es una plataforma de enseñanza de programación que hace el aprendizaje más efectivo y entretenido. Ofrece tutoriales interactivos y ejercicios prácticos en más de 10 lenguajes de programación, utilizando un pseudolenguaje llamado Kaeli. Incluye una comunidad activa para resolver dudas y fomentar el aprendizaje colaborativo. Diseñada especialmente para un público joven, K-Book cuenta con una interfaz visualmente atractiva y fácil de usar.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="FAQs">
+                    <div class="pregunta">
+                        <h3>¿Cómo funciona?</h3>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path 
+                            d="M3 3L21 21L39 3"
+                            stroke="white"
+                            stroke-width="7"
+                            stroke-linecap="round"
+                            />
+                        </svg>
+                    </div>
+                    <div class="respuesta">
+                        <p>
+                            K-Book es una plataforma integral para aprender programación, destacándose por su comunidad activa, una documentación accesible y un editor de código avanzado. Los usuarios pueden interactuar y colaborar, acceder a recursos bien organizados y utilizar un editor con autocompletado, depuración en tiempo real y soporte para múltiples lenguajes. Ideal para principiantes y expertos, K-Book facilita el aprendizaje y desarrollo de proyectos de software.
+
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="FAQs">
+                    <div class="pregunta">
+                        <h3>¿Cuánto se demora en hacer la transacción para el pro?</h3>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path 
+                            d="M3 3L21 21L39 3"
+                            stroke="white"
+                            stroke-width="7"
+                            stroke-linecap="round"
+                            />
+                        </svg>
+                    </div>
+                    <div class="respuesta">
+                        <p>
+El tiempo que se demora en hacer la transacción para adquirir la suscripción Pro en K-Book generalmente es inmediato. Una vez que se realiza el pago, el acceso a las funciones Pro debería activarse de manera instantánea o en pocos minutos. Sin embargo, esto puede variar dependiendo del método de pago y del procesamiento de la transacción. Si experimentas algún retraso significativo, es recomendable contactar con el soporte al cliente de K-Book para resolver cualquier problema.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <div class="contenedor-exito-bg">
+            <section class="exito">
+                <div class="exito-titulo">
+                    <h2>Únete a más de 100 mil personas que buscan aprender a programar</h2>
+                    <p>Creemos que todo el mundo debería tener la oportunidad de aprender a programar, ya que esta es una profesión del futuro. Vea las inspiradoras historias de las personas que pudieron salir adelante gracias a la programación</p>
+                </div>
+                <div class="exitos-contenedor">
+                <img  class="prev" src="static/img/next.png" alt="Previous">
+                <div class="contenedor-carrusel">
+                    <div class="carrusel">
+                        <div class="casos-exito">
+                            <img src="/static/img/laura.jpeg" alt="Laura">
+                            <div class="texto-caso">
+                                <h3>Inteligencia Artificial para el Diagnóstico Médico<br>Laura Pérez</h3>
+                                <p>Una estudiante de biomedicina, comenzó a usar K-Book para aprender programación en Python y técnicas de machine learning. Aplicó sus conocimientos para desarrollar un modelo de inteligencia artificial que puede analizar imágenes médicas y ayudar a los médicos a detectar enfermedades tempranas.</p>
                             </div>
-                            <h3>Estudiante</h3>
-                            <h3>$ 0.00</h3>
-                            <p>al mes</p>
-                            <div class="button-container">
-                                <a href="#" class="btn-vm">Ver más</a>
-                            </div>
-                            <p>Introducción a la programación</p>
-                            <p>✓ Divertido</p>
-                            <p>✓ Aprende a programar</p>
-                            <p>✓ Comunidad</p>
                         </div>
-                        <div class="Precio corporativo">
-                            <div class="img-container">
-                                <img src="static/img/p_corp.jpg" alt="Corporativo">
+                        <div class="casos-exito">
+                            <img src="/static/img/javier.jpg" alt="Javier">
+                            <div class="texto-caso">
+                                <h3>Automatización en la Industria<br>Javier Martínez</h3>
+                                <p>Un ingeniero mecánico, utilizó K-Book para aprender sobre programación de PLCs y sistemas de control industrial. Implementó soluciones de automatización en la fábrica donde trabaja, aumentando la eficiencia y reduciendo los tiempos de inactividad.</p>
                             </div>
-                            <h3>Corporativo</h3>
-                            <h3>$ 200-900</h3>
-                            <p>al año</p>
-                            <div class="button-container">
-                                <a href="#" class="btn-contactanos">Contáctanos</a>
-                            </div>
-                            <p>Introducción a la programación</p>
-                            <p>✓ Divertido</p>
-                            <p>✓ Aprende a programar</p>
-                            <p>✓ Comunidad</p>
                         </div>
-                        <div class="Precio pro">
-                            <div class="img-container">
-                                <img src="static/img/headder.jpg" alt="Estudiante Pro">
+                        <div class="casos-exito">
+                            <img src="/static/img/sara.jpeg" alt="Sara">
+                            <div class="texto-caso">
+                                <h3>Desarrollo de Videojuegos Educativos<br>Sara Gutiérrez</h3>
+                                <p>Una artista y diseñadora de juegos, aprendió a programar con K-Book para crear su propio videojuego educativo. Su primer juego, destinado a enseñar matemáticas a niños, combinó sus habilidades artísticas con programación en Unity. El juego tuvo un gran éxito en las escuelas.</p>
                             </div>
-                            <h3>Estudiante Pro</h3>
-                            <h3>$ 5.00</h3>
-                            <p>al mes</p>
-                            <div class="button-container">
-                                <a href="#" class="btn-vm">Ver más</a>
-                            </div>
-                            <p>Repositorios avanzados</p>
-                            <p>✓ Desarrolla videojuegos</p>
-                            <p>✓ Bien explicado</p>
-                            <p>✓ Ejercicios avanzados</p>
                         </div>
-                        <img src="static/img/p_flotando.png" alt="Astronauta" class="astronauta">
-                    </section>
-                </div>   
+                        <div class="casos-exito">
+                            <img src="/static/img/tomas.jpeg" alt="Tomás">
+                            <div class="texto-caso">
+                                <h3>Aplicaciones de Realidad Aumentada para la Arquitectura<br>Tomás López</h3>
+                                <p>Un arquitecto, aprendió a programar en C# utilizando K-Book para explorar el potencial de la realidad aumentada (AR) en su campo. Creó una aplicación que permite a los clientes visualizar proyectos arquitectónicos en 3D a través de sus dispositivos móviles, mejorando la comprensión y la comunicación de sus diseños.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="next" src="static/img/next.png" alt="Next">
+            </div>
+            </section>
+        </div>
+        <div class="contenedor-contacto-bg">
+            <section class="contenedor-contacto">
+                <div class="cabecera">
+                    <h2 class="titulo-contacto">Contáctanos</h2>
+                    <p class="descripcion-contacto">Mándanos un mensaje para que puedas recibir ayuda o más información
+                    </p>
+                </div>
+                <div class="contenido-contacto">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </section>
+            <div class="back-to-top">
+                <a href="#top"><img src="/static/img/next.png" alt="Back to top"></a>
+            </div>
+        </div>
     </main>
+    <footer>
+        <div class="footer-container">
+            <div class="social-media">
+                <h2>Redes Sociales</h2>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com" target="_blank"><img src="/static/img/ig.png" alt="Instagram" class="ig"></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="/static/img/yt.png" alt="YouTube" class="yt"></a>
+                    <a href="https://www.facebook.com" target="_blank"><img src="/static/img/fb.png" alt="Facebook"></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>©2024, K-book Derechos reservados</p>
+            </div>
+            
+        </div>
+    </footer>
 </body>
 </html>
