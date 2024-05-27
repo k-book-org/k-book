@@ -183,42 +183,40 @@ document.addEventListener("DOMContentLoaded", () => {
 //nav
 document.addEventListener("DOMContentLoaded", function () {
     const nav = document.querySelector('.nav1');
-    const navHeight = nav.offsetHeight; 
-    const logo = document.querySelector('.logo'); 
+    const logo = document.querySelector('.logo');
   
-    window.addEventListener('scroll', function () {
-   
-      const scrollDistance = window.scrollY;
-  
+    function handleScroll() {
+        const scrollDistance = window.scrollY;
 
-      document.body.style.paddingTop = navHeight + 'px';
+        if (scrollDistance > 0) {
+            nav.classList.add('active');
+            logo.classList.add('hide'); 
+        } else {
+            nav.classList.remove('active');
+            logo.classList.remove('hide'); 
+        }
+    }
 
-      if (scrollDistance > 0) {
-        nav.classList.add('active');
-        logo.classList.add('hide'); 
-      } else {
-        nav.classList.remove('active');
-        logo.classList.remove('hide'); 
-      }
-    });
-  
+    window.addEventListener('scroll', handleScroll);
+
     const links = document.querySelectorAll('a[href^="#"]');
-  
+
     for (const link of links) {
-      link.addEventListener("click", clickHandler);
+        link.addEventListener("click", function(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+            const offsetTop = document.querySelector(href).offsetTop;
+
+            scroll({
+                top: offsetTop,
+                behavior: "smooth"
+            });
+        });
     }
-  
-    function clickHandler(e) {
-      e.preventDefault();
-      const href = this.getAttribute("href");
-      const offsetTop = document.querySelector(href).offsetTop;
-  
-      scroll({
-        top: offsetTop,
-        behavior: "smooth"
-      });
-    }
-  });
+
+    handleScroll(); // Ensure nav is styled correctly on load
+});
+
   
   
 
