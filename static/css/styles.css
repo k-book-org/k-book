@@ -279,6 +279,16 @@ h2.titulo.Acerca-de{
     color: #D9D9D9;
 }
 
+.contenedor-video video {
+    max-width: 700px;
+    max-height: 500px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 20px;
+     margin-bottom: 5%;
+ }
+
 /*Tabla de precios*/
 .contenedor-TP-bg {
     
