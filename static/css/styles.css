@@ -1040,3 +1040,137 @@ footer {
     font-family: "Arvo", serif;
     font-weight: 300;
 }
+
+/* Responsive */
+
+@media screen and (max-width: 500px) {
+    nav {
+        max-width: 100vw;
+    }
+    .logo img {
+        width: 64px;
+        height: 64px;
+    }
+    .center {
+        display: none !important;
+    }
+    .textos-header > h1 {
+        font-size: xx-large;
+    }
+    .titulo  {
+        font-size:  x-large;
+    }
+
+    .contenedor-about-k-book {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-k-book{
+        width: 100% !important;
+        height: calc(100vw - 12px) !important;
+    }
+    .contenido-texto{
+        width: 100% !important;
+    }
+    .Acerca {
+        font-size: medium;
+    }
+    .contenedor-about-k-book > p {
+        font-size: medium;
+    }
+
+    .contenedor-AIC-bg, .AIC_k-book {
+        width: 100% !important;
+    }
+    .AIC_k-book > .titulo {
+        font-size: large;
+    }
+    .AIC_k-book > p {
+        font-size: medium;
+    }
+    .galeria-k-book {
+        width: 100% !important;
+    }
+    .galeria-k {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .comentarios-contenedor {
+        max-width: 100%;
+        width: 100%;
+    }
+    .slider-test {
+        width: 100%;
+    }
+
+    .contenedor-TP {
+        max-width: 100%;
+        width: 100% !important;
+    }
+    .contenedor-TP > .Precio {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .galeria-title {
+        font-size: xx-large;
+    }
+    .galeria-subtitle {
+        width: 100%;
+    }
+
+    .image-container{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .image-container img {
+        width: 100%;
+    }
+
+    .faq > h2 {
+        font-size: x-large;
+    }
+    .FAQs h3 {
+        font-size: large;
+    }
+    .FAQs p {
+        font-size: medium;
+    }
+
+    .exito {
+        width: 100%;
+    }
+    .exito-titulo > h2 {
+        font-size: x-large;
+    }
+
+    .casos-exito {
+        flex-direction: column;
+    }
+
+    .titulo-contacto{
+        font-size: x-large;
+    }
+    .contenedor-contacto {
+        padding: 0 10px;
+        max-width: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .contenido-contacto {
+        width: 100%;
+    }
+    .form-row {
+        display: block;
+    }
+
+    .contenido-contacto button {
+        font-size: large;
+    }
+    
+    .social-media > h2 {
+        font-size: x-large;
+    }
+}
