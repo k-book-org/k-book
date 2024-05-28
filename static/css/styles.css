@@ -791,6 +791,7 @@ button[type="submit"]:hover {
 }
 .galeria-subtitle{
     width: 35%;
+    color: #011E2C;
     text-align: center;
     margin-top: 20px!important;
     margin: 0 auto;
