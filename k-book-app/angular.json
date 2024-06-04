@@ -39,7 +39,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "public/js/efect.js"
+            ]
           },
           "configurations": {
             "production": {
