@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  kbook-app:
+    build: .
+    ports:
+      - "4200:4200"
+    volumes:
+      - ./k-book-app:/kbook-app
+      - /k-book-app/node_modules
