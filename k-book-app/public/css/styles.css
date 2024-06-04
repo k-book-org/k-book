@@ -1,0 +1,1168 @@
+* {
+    margin: 0;  
+    padding: 0; 
+    box-sizing: border-box;
+    
+}
+/*naV*/
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 100px; /* Add padding to prevent content from being hidden behind the nav */
+    position: relative;
+}
+
+.nav1 {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: all 0.5s ease;
+    z-index: 999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a light shadow */
+}
+
+.nav1.active {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-group.left, .nav-group.center, .nav-group.right {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: all 0.3s ease;
+}
+
+.logo img.hide {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.nav-group.center {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.nav-group.center li, .nav-group.right li {
+    list-style: none;
+}
+
+.nav-group.center li a {
+    color: #011E2C;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.nav-group.center li a:hover {
+    padding: 5px 10px;
+    background: #011E2C;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+    transition: opacity 0.3s ease;
+}
+
+.nav1 a {
+    font-family: "Archivo Narrow", sans-serif;
+    color: #011E2C;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+.start-button, .login {
+    padding: 6px 12px;
+    text-decoration: none;
+}
+
+.login {
+    background: none;
+    color: #011E2C;
+}
+
+.nav-group.right li a {
+    color: #011E2C;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.nav-group.right li a:hover {
+    padding: 5px 10px;
+    background: #377483;
+    color: #fff;
+    border-radius: 15px;
+}
+
+/*header*/
+.header2 {
+    width: 100%;
+    height: 900px;
+    background: rgb(1,30,44);
+    background: linear-gradient(0deg, rgba(1,30,44,0) 61%, rgba(217,217,217,1) 98%);
+}
+.header {
+    width: 100%;
+    height: 900px;
+    background: rgb(1,30,44);
+    background: linear-gradient(0deg, rgba(1,30,44,1) 15%, rgba(255,255,255,0) 87%), url(../img/headder3.jpeg);
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat; 
+}
+.textos-header {
+    margin-top: -102px;
+    padding: 0 7% 0 7%;
+    display: flex;        
+    flex-direction: column;  
+    justify-content: center; 
+    height: 660px; 
+}
+
+.textos-header > h1 {
+    max-width: 65%;
+    font-family: "Archivo Narrow", sans-serif;
+    color: white !important;
+    font-size: 64px;
+    font-weight: bold;
+}
+.textos-header > h2 {
+    max-width: 50%;
+    font-family: "Archivo Narrow", sans-serif;
+    color: white !important;
+    font-size: 24px;
+    font-weight: normal;
+}
+.button-application {
+    font-family: "Archivo Narrow", sans-serif;
+    font-weight: 500;
+    margin-top: 30px;
+    background-color: #D9D9D9;
+    color: #011E2C;
+    border-radius: 11px;
+    padding: 7px 20px; 
+    font-size: 20px; 
+    text-decoration: none; 
+    display: inline-block; 
+}
+/*General*/
+.contenedor{
+
+    padding: 60px 0;
+    width: 95%;
+    max-width: 85%;
+    margin: auto; 
+    overflow: hidden;
+}
+.titulo{
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 48px;  /* this is quite large, make sure it's intended */
+    font-weight: Bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.parrafo {
+    font-family: "Arvo", serif;
+    font-size: 20px;
+    font-style: normal;
+
+}
+/*About k book*/
+h2.titulo.Acerca-de{
+    margin-bottom: 5%;
+    text-align: left;
+    font-weight: 500;
+}
+.contenedor-about-k-book-bg {
+    background-color: #011E2C;
+    width: 100%;
+    padding: 30px 0;
+    position: relative;
+    transition: height 0.5s ease-in-out;
+}
+
+
+
+
+.contenedor-about-k-book {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    margin-top: 3%;
+    gap: 8%;
+    width: 100%; 
+    max-width: 75%; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 6%;
+}
+
+
+.imagen.about-k-book {
+    width: 40%;
+    height: 650px; 
+    background-size: cover; 
+    background-position: center;
+    border-radius: 30px;
+}
+
+.contenido-texto {
+    color: #ffffff;
+    width: 45%; 
+}
+.btn-ver-mas {
+    font-family: "Archivo Narrow", sans-serif;
+    font-weight: 500 ;
+    margin-top: 30px;
+    background-color: #D9D9D9;
+    color: #011E2C;
+    border-radius: 11px;
+    padding: 8px 30px; 
+    font-size: 20px; 
+    text-decoration: none; 
+    display: inline-block; 
+    cursor: pointer;
+    user-select: none;
+}
+
+/*Integranbtes*/
+.integrantes{
+    display: none;
+    font-family: "Archivo Narrow", sans-serif;
+    color: #fff;
+    transition: opacity 0.5s ease-in-out;
+}
+.integrantestext{
+    font-size: 42px !important;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+    .card {
+        margin-bottom: 30% !important; /* Margen negativo en la parte superior e inferior, sin modificar el margen lateral */
+    }
+    .integrantes .card .description p{
+        font-size: 14px;
+    }
+
+    .integrantes .card .description h3{
+        color: #2e0f32;
+        font-size: 16px;
+    }
+    .integrantes .card .description h4{
+        color: #4d1f3b;
+        font-size: 15px;
+    }
+    .integrantes .gen{
+
+        padding: 3px 17% 50px 17% !important;
+    }
+    .integrantes .card .head {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .integrantes .card .head .circle {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: #2e0f32;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+    }
+}
+.integrantes .frase{
+    color: #011E2C !important;
+    width: 80%;
+    margin: 0 auto;
+}
+.code{
+    color: #011E2C;
+}
+.integrantes .gen{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 20% 20px 20%;
+}
+.integrantes .card {
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 3.2%; /* Espacio entre las tarjetas */
+    transition: 0.5s;
+    margin-bottom: 8%;
+    box-shadow:  0 0 5px #fff;
+}
+.integrantes .card:hover {
+    box-shadow: 0 5px 20px #377483;
+    transform: translateY(-15px);
+}
+.integrantes .card .head{
+    height: 125px;
+    width: 100%;
+    position:  relative;
+}
+.integrantes .card .head .circle{
+    position:absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #011E2C;
+    bottom:0;
+}
+.integrantes .card .head .img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    bottom: -30%;
+    left: 50%;
+    transform:  translate(-50%);
+}
+.integrantes .card .head .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.integrantes .card .description {
+    height: 200px;
+    padding: 40px 20px 20px 20px;
+    border-bottom: solid 1px #011E2C;
+    text-align: center;
+
+}
+.integrantes .card .description h3{
+    color: #011E2C;
+}
+.integrantes .card .description h4{
+    color: #011E2C;
+}
+.integrantes .card .description p{
+    text-align: center;
+
+
+    margin-top: 3%;
+}
+.integrantes .card .codigo{
+    height: 200px;
+    padding: 8px 20px 20px 20px;
+    text-align: center;
+}
+.integrantes .card .codigo h3{
+    color: #011E2C;
+}
+/*AIC*/
+.titulo.AIC {
+    color: #011E2C;
+}
+
+/* Estilos generales */
+.contenedor-AIC-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #B6C8D2;
+
+}
+
+.contenedor.AIC_k-book {
+    width: 66%;
+    text-align: center;
+}
+
+.contenedor.AIC_k-book .parrafo.AIC {
+    width: 65%;
+    margin: 0 auto;
+    color: #011E2C;
+    margin-bottom: 4%;
+}
+
+/* Estilos específicos para la galería */
+.galeria-k-book {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.galeria-k {
+    margin-top: 2%;
+    background-color: rgba(1, 30, 44, 0.85);
+    font-family: "Archivo Narrow", sans-serif;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    color: #ffffff;
+    flex: 1 1 50%;
+    max-width: 30%;
+    position: relative;
+    margin: 5px;
+}
+
+.galeria-k img {
+    width: 100%;
+    height: 500px;
+    display: block;
+    object-fit: cover;
+}
+
+.texto-sobre-imagen {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(1, 30, 44, 0.85);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    height: 35%; 
+}
+
+.texto-sobre-imagen h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.texto-sobre-imagen p {
+    padding: 0 10px;
+    font-size: 1em;
+    color: #D9D9D9;
+}
+
+
+/*Video*/
+
+.contenedor-video video {
+    max-width: 100%;
+    max-height: 500px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 20px;
+     margin-bottom: 5%;
+ }
+
+/*Tabla de precios*/
+.contenedor-TP-bg {
+    
+    background-color: #011E2C;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.contenedor-TP {
+
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+    background-color: #011E2C;
+    color: #fff;
+    margin: 0 auto;
+    padding: 0;
+    flex-direction: row;
+    margin-bottom: 3%;
+}
+
+.titulo.TP {
+    margin-top: 5%;
+    font-size: 48px;
+        font-weight: 600;
+    color: #fff;
+}
+
+.Precio {
+    background-color: #011E2C;
+    padding: 35px;
+    max-width: 30%;
+    max-height: 570px;
+    margin: 10px;
+    text-align: left;
+    border:1px solid #fff;
+    border-radius: 32px;
+    transition: 0.5s;
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.img-container img {
+
+    width: 310px;
+    height: 220px;
+    object-fit: cover;
+    display:block;
+}
+
+.Precio h3 {
+    color: #fff;
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.Precio p {
+    font-family: "Arvo", serif;
+    font-size: 16px;
+    color: #fff;
+    margin: 5px 0;
+}
+
+.button-container {
+    margin: 10px 0;
+    text-align: center !important;
+}
+
+.btn-vm, .btn-contactanos {
+    background-color: #D9D9D9;
+    color: #011E2C;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.btn-vm:hover, .btn-contactanos:hover {
+    background-color: #007BB5;
+}
+
+.astronauta {
+    position: absolute;
+    top: 34px;
+    right: 203px;
+    width: 262px;
+}
+.Precio:hover {
+    box-shadow: 0 5px 20px #377483;
+    transform:scale(105%)
+}
+/*Comentarios*/
+.carousel-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto; 
+}
+
+.content-comentarios {
+    font-family: "Archivo Narrow", sans-serif;
+    color: #011E2C;
+    height: auto;
+    overflow: hidden;
+    padding: 3% 0;
+    position: relative; 
+}
+
+.imgconte {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.slider-contenedor {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-test {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    text-align: left;
+}
+
+.titular {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.textoC {
+    margin: 0;
+    padding: 0;
+    font-family: "Archivo Narrow", "sans-serif";
+    font-size: 26px;
+    margin-top: 2%;
+}
+
+.comentarios-contenedor{
+    display: flex;
+    align-items: center;
+    max-width: 65%;
+}
+
+.flecha-izq, .flecha-der {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    
+    pointer-events: auto;
+}
+
+.flecha-izq {
+    transform: scaleX(-1);
+}
+/*puntos de navegacion de los comentarios*/
+.nav-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 4%;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #011E2C;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #D9D9D9;
+    outline: 4px solid #011E2C;
+}
+/*Contacto*/
+.contenedor-contacto-bg {
+    background-color: #377483;
+    padding: 50px 0;
+    z-index: 1;
+    position: relative;
+}
+
+.contenedor-contacto {
+    width: 70%; /* Increased to make the container wider */
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    margin-top: 20px;
+    gap: 6%;
+    align-items: center; 
+}
+.cabecera {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.titulo-contacto {
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.descripcion-contacto {
+    font-family: "Arvo", serif;
+    font-size: 16px;
+}
+
+.contenido-contacto form {
+    display: flex;
+    flex-direction: column;
+
+}
+.contenido-contacto {
+    flex: 1; /* Allow form to take more space */
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    flex: 1;
+
+}
+
+.form-group:last-child {
+    margin-right: 0;
+}
+
+.form-group label {
+    font-family: "Arvo", serif;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff; /* Ensure text is white for readability */
+}
+button[type="submit"] {
+    font-family: "Archivo Narrow", sans-serif;
+    align-self: flex-end;
+    padding: 5px 30px;
+    border: none;
+    font-weight: bold;
+    border-radius: 11px;
+    background-color: #fff;
+    color: #011E2C;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #ddd;
+}
+
+
+/*galeria*/
+.galeria-bg {
+    background-color: #B6C8D2;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the gallery title and container */
+}
+
+.galeria-title {
+    text-align: center;
+    font-family: "Archivo Narrow", sans-serif;
+    color: #011E2C;
+    font-size: 48px;
+
+}
+.galeria-titulo{
+    padding: 7% 0; 
+}
+.galeria-subtitle{
+    width: 35%;
+    color: #011E2C;
+    text-align: center;
+    margin-top: 20px!important;
+    margin: 0 auto;
+    font-family: "Arvo", serif;
+}
+.image-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10%;
+    margin-bottom: 5%;
+}
+.contenedor-galeria{
+    max-width: 70%;
+}
+.image-container img {
+    width: 50%;
+    height: 449px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.image-description{
+    color: #011E2C;
+}
+.image-description h2{
+    font-family: "Archivo Narrow", sans-serif;
+    margin-bottom: 2%;
+    font-size: 30px;
+    
+}
+
+.image-description p{
+    font-family: "Arvo", serif;
+}
+/*FAQs*/
+.contenedor-preguntas-bg {
+    background-color: #377483;
+
+    color: #ffffff;
+}
+.faq {
+    padding: 5% 0;
+}
+.FAQs {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 700px !important;
+    border-bottom: 2px solid #fff; 
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+.faq h2 {
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.pregunta {
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pregunta h3 {
+    font-weight: 400;
+    font-size: 1.8rem;
+    padding: 20px 0;
+}
+.respuesta {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+.respuesta p {
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-family: "Arvo", serif;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+.FAQs.active .respuesta {
+    max-height: 300px;
+    transition: max-height 0.5s ease-in;
+}
+
+/*Exito*/
+.contenedor-exito-bg {
+    background-color: #011E2C;
+    width: 100%;
+    z-index: 2;     
+    position: relative;
+    min-height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 19px 2px;
+}
+
+.exito {
+    width: 70%; 
+    margin: 0 auto;
+    color: #ffffff;
+    padding: 30px 0;
+}
+
+.exito-titulo h2 {
+    width: 60%;
+    margin: 0 auto;
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 48px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.exito-titulo p {
+    font-family: "Arvo", serif;
+    width: 55%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.contenedor-carrusel {
+    position: relative;
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrusel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.casos-exito {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0;
+    align-items: center;
+    gap: 25px;
+}
+
+.casos-exito img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.next, .prev {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    filter: invert(100%) brightness(200%); /* Change to white */
+    pointer-events: auto;
+}
+.prev {
+    transform: scaleX(-1);
+}
+.texto-caso {
+    font-size: 14px;
+}
+
+.texto-caso h3 {
+    font-family: "Archivo Narrow", sans-serif;
+}
+
+.texto-caso p {
+    margin-top: 10px;
+    font-family: "Arvo", serif;
+}
+
+.exitos-contenedor{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+
+
+/* Footer */
+footer {
+    background-color: #011E2C;
+    color: #ffffff;
+    padding: 0 0 50px;
+    text-align: center;
+    position: relative; /* Ensure the footer is positioned relative for absolute positioning of back-to-top */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative; /* Relative positioning to contain the absolute positioned back-to-top */
+}
+
+.back-to-top {
+    position: absolute; /* Absolutely position the back-to-top button */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%) rotate(270deg); /* Correct centering and rotate the arrow to point up */
+    margin-bottom: -38px; /* Margin for spacing */
+}
+
+.back-to-top img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-media h2 {
+    padding: 52px 0 30px 0;
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.yt, .ig {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom p {
+    text-align: right;
+    font-size: 12px;
+    font-family: "Arvo", serif;
+    font-weight: 300;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 500px) {
+    nav {
+        max-width: 100vw;
+    }
+    .logo img {
+        width: 64px;
+        height: 64px;
+    }
+    .center {
+        display: none !important;
+    }
+    .textos-header > h1 {
+        font-size: xx-large;
+    }
+    .titulo  {
+        font-size:  x-large;
+    }
+
+    .contenedor-about-k-book {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-k-book{
+        width: 100% !important;
+        height: calc(100vw - 12px) !important;
+    }
+    .contenido-texto{
+        width: 100% !important;
+    }
+    .Acerca {
+        font-size: medium;
+    }
+    .contenedor-about-k-book > p {
+        font-size: medium;
+    }
+
+    .contenedor-AIC-bg, .AIC_k-book {
+        width: 100% !important;
+    }
+    .AIC_k-book > .titulo {
+        font-size: large;
+    }
+    .AIC_k-book > p {
+        font-size: medium;
+    }
+    .galeria-k-book {
+        width: 100% !important;
+    }
+    .galeria-k {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .comentarios-contenedor {
+        max-width: 100%;
+        width: 100%;
+    }
+    .slider-test {
+        width: 100%;
+    }
+
+    .contenedor-TP {
+        max-width: 100%;
+        width: 100% !important;
+    }
+    .contenedor-TP > .Precio {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .galeria-title {
+        font-size: xx-large;
+    }
+    .galeria-subtitle {
+        width: 100%;
+    }
+
+    .image-container{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .image-container img {
+        width: 100%;
+    }
+
+    .faq > h2 {
+        font-size: x-large;
+    }
+    .FAQs h3 {
+        font-size: large;
+    }
+    .FAQs p {
+        font-size: medium;
+    }
+
+    .exito {
+        width: 100%;
+    }
+    .exito-titulo > h2 {
+        font-size: x-large;
+    }
+
+    .casos-exito {
+        flex-direction: column;
+    }
+
+    .titulo-contacto{
+        font-size: x-large;
+    }
+    .contenedor-contacto {
+        padding: 0 10px;
+        max-width: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .contenido-contacto {
+        width: 100%;
+    }
+    .form-row {
+        display: block;
+    }
+
+    .contenido-contacto button {
+        font-size: large;
+    }
+    
+    .social-media > h2 {
+        font-size: x-large;
+    }
+}
