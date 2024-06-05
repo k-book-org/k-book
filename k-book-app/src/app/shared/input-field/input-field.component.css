@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.content-input-text{
+    box-shadow: 0px 8px 22px -10px;
+}
