@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.cont-new-user{
+    box-shadow: 3px 10px 53px 13px;
+}
+form {
+    margin-bottom: 30px;
+}
+h3{
+    font-family: "Kanit", sans-serif;
+    font-size: 36px;
+    color: #011E2C;
+}
+.content-new{
+    margin-top: 20px;
+}
