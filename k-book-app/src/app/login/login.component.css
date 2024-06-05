@@ -4,6 +4,40 @@
 @tailwind utilities;
 .contenedor-titulo{
     font-family: "Kanit", sans-serif;
-    color: hsl(200, 96%, 9%);
+    color: #011E2C;
     font-size: 36px;
+}
+.recuperar-password{
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    padding: 6% 0px;
+}
+.line{
+    max-width: 70%;
+    height: 1px;
+    background-color:#011E2C ;
+    color: #011E2C;
+    margin: 0 auto;
+}
+.forgot{
+    padding: 6% 0px;
+}
+.contenedor-logo{
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+.logo{
+    
+    color: #011E2C;
+    font-weight: 500;
+    font-size: 36px;
+}
+.image{
+    height: 125px;
+    width: 125px;
+}
+.content-form{
+    box-shadow: 11px -10px 33px 9px 
+
 }

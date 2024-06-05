@@ -1,7 +1,10 @@
 <section class="w-full max-h-screen overflow-auto grid grid-cols-2">
-    <div class="relative rounded-r-2xl max-h-screen shadow-lg shadow-black grid grid-rows-4">
-        <div class="w-full flex content-start">
-            <img src="/img/unbg_lowres.png" class="object-cover w-28 h-28" alt="">
+    <div class="content-form relative  max-h-screen shadow-lg shadow-black grid grid-rows-4">
+        <div class="logo w-full flex content-start">
+            <div class="contenedor-logo">
+            <img src="/img/unbg_lowres.png" class="image" alt="">
+            <h3>K-book</h3>
+        </div>
         </div>
         <div class="m-auto w-3/5 col-span-6">
             <div class="contenedor-titulo w-full mb-6">
@@ -12,11 +15,12 @@
                 <app-password-field [label]="'Contraseña'" />
                 <app-button [text]="'Entrar'"/>
             </form>
-            <div class="w-full grid grid-rows-2 gap-2">
-                <div class="w-full border-b border-b-black py-4 flex">
+            <div class="content-help w-full">
+                <div class="recuperar-password flex">
                     <a href="/recuperar" class="m-auto">Olvidate tu contraseña?</a>
                 </div>
-                <div class="flex">
+                <div class="line"></div>
+                <div class="forgot flex">
                     <span class="font-medium m-auto">Nuevo por aqu&iacute;? <a href="/registro" class="text-primaty-verde">Registrate</a></span>
                 </div>
             </div>
