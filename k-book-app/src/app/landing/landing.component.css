@@ -1,4 +1,7 @@
 /*naV*/
+.app-container {
+    padding-top: 100px; /* Add padding to prevent content from being hidden behind the nav */
+}
 .nav1 {
     display: flex;
     position: fixed;
