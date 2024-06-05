@@ -5,6 +5,7 @@ import { InputFieldComponent } from './input-field/input-field.component';
 import { PasswordFieldComponent } from './password-field/password-field.component';
 import { LineComponent } from './line/line.component';
 import { LogoComponent } from './logo/logo.component';
+import { NavComponent } from './nav/nav.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { LogoComponent } from './logo/logo.component';
     InputFieldComponent,
     PasswordFieldComponent,
     LineComponent,
-    LogoComponent
+    LogoComponent,
+    NavComponent
   ],
   imports: [
     CommonModule
@@ -23,7 +25,8 @@ import { LogoComponent } from './logo/logo.component';
     InputFieldComponent,
     PasswordFieldComponent,
     LineComponent,
-    LogoComponent
+    LogoComponent,
+    NavComponent
   ]
 })
 export class SharedModule { }
