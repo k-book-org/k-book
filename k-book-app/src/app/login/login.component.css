@@ -2,3 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.contenedor-titulo{
+    font-family: "Kanit", sans-serif;
+    color: hsl(200, 96%, 9%);
+    font-size: 36px;
+}
