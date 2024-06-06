@@ -1,0 +1,30 @@
+.contenedor-perfil {
+  background-image: url(/img/bg_ft.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: center;
+  height: 100%;
+}
+
+.wrapper {
+
+  width: 80%;
+  background: transparent !important;
+  border: 2px solid #FDFBF6;
+  backdrop-filter: blur(30px) !important;
+  box-shadow: 0 0 10px #242422;
+  color: #242422;
+  border-radius: 20px;
+  padding: 30px 40px;
+  margin: 0 auto;
+
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #FDFBF6;
+}
+.contenido-perfil{
+padding: 5% 0;
+}

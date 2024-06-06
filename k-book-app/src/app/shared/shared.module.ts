@@ -6,7 +6,6 @@ import { PasswordFieldComponent } from './password-field/password-field.componen
 import { LineComponent } from './line/line.component';
 import { LogoComponent } from './logo/logo.component';
 import { NavComponent } from './nav/nav.component';
-import { BackgorundComponent } from './backgorund/backgorund.component';
 
 
 @NgModule({
@@ -17,7 +16,7 @@ import { BackgorundComponent } from './backgorund/backgorund.component';
     LineComponent,
     LogoComponent,
     NavComponent,
-    BackgorundComponent
+
   ],
   imports: [
     CommonModule
@@ -29,7 +28,7 @@ import { BackgorundComponent } from './backgorund/backgorund.component';
     LineComponent,
     LogoComponent,
     NavComponent,
-    BackgorundComponent
+
   ]
 })
 export class SharedModule { }
