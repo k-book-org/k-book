@@ -2,25 +2,14 @@
   <app-nav></app-nav>
   <div class="contenido-perfil">
     <div class="wrapper">
-      <div class="info-perfil">
-        <div class="img-perfil">
-          <img src="/img/GILBERT.png" alt="">
-        </div>
-        <div class="cont-info">
-          <h1 class="name-user">Gilbert Bougainilea</h1>
-          <div class="sub-info">
-            <div class="user-id">
-              <img src="/img/perfil.png" alt="">
-              <h3 >Gbouga</h3>
-            </div>
-            <div class="birth-date">
-              <img src="/img/cumpleaños.png" alt="">
-              <h3 >07 may 2005</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <app-info-perfil></app-info-perfil>
+      <div class="separador">
+      <form class="">
+        <app-btn-perfil-interaction [buttonText]="'Perfil'"></app-btn-perfil-interaction>
+        <app-btn-perfil-interaction [buttonText]="'Comunidad'"></app-btn-perfil-interaction>
+      </form>
+      <div class="separador-line"></div>
+    </div>
     </div>
   </div>
 </div>
