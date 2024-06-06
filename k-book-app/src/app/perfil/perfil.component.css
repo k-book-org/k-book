@@ -2,10 +2,8 @@
   background-image: url(/img/bg_ft.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: center;
   height: 100%;
 }
-
 .wrapper {
 
   width: 80%;
@@ -18,13 +16,49 @@
   padding: 30px 40px;
   margin: 0 auto;
 
-}
 
-.wrapper h1 {
+}
+.cont-info h1 {
+  font-family: "Archivo Narrow", sans-serif;
+  color: white;
+  margin-bottom: 4%;
+  font-weight: normal;
   font-size: 36px;
-  text-align: center;
-  color: #FDFBF6;
 }
 .contenido-perfil{
 padding: 5% 0;
+}
+.info-perfil {
+display: flex;
+gap: 40px;
+align-items: center;
+}
+.img-perfil img{
+height: 175px;
+width: 175px;
+object-fit: cover;
+border-radius: 15px;
+}
+
+.sub-info img{
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+  filter: invert(100%);
+}
+.sub-info h3{
+  font-family: "Archivo Narrow", sans-serif;
+  color: white;
+  font-weight: normal;
+  font-size: 18px;
+}
+.user-id{
+  gap: 15px;
+  align-items: center;
+  display: flex;
+}
+.birth-date{
+  gap: 15px;
+  align-items: center;
+  display: flex;
 }
