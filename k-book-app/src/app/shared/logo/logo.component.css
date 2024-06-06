@@ -1,7 +1,7 @@
 .contenedor-logo{
     display: flex;
     align-items: center;
-    position: absolute;
+    margin-bottom: -10%;
 }
 .text-logo{
     font-family: "Kanit", sans-serif;
@@ -9,6 +9,7 @@
     font-weight: 400;
     font-size: 36px;
 }
+
 .image{
     height: 125px;
     width: 125px;
