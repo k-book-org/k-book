@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.cont-boton{
+    font-size: 36px;
+    font-family: "Kanit", sans-serif;
+    box-shadow: 0px 8px 22px -10px;
+}

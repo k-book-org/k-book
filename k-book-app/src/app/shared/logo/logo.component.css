@@ -1,0 +1,15 @@
+.contenedor-logo{
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+.text-logo{
+    font-family: "Kanit", sans-serif;
+    color: #011E2C;
+    font-weight: 400;
+    font-size: 36px;
+}
+.image{
+    height: 125px;
+    width: 125px;
+}

@@ -1,0 +1,27 @@
+<section class="w-full max-h-screen overflow-auto grid grid-cols-2">
+    <div class="content-form relative  max-h-screen shadow-lg shadow-black grid grid-rows-4">
+        <app-logo> </app-logo>
+        <div class="m-auto w-3/5 col-span-6">
+            <div class="contenedor-titulo w-full mb-6">
+                <h3 class="text-center">Entra a tu cuenta</h3>
+            </div>
+            <form class="grid grid-rows-3 gap-8">
+                <app-input-field [label]="'Email o username'" [type]="'text'"/>
+                <app-password-field [label]="'Contraseña'" />
+                <app-button [text]="'Entrar'"/>
+            </form>
+            <div class="content-help w-full">
+                <div class="recuperar-password flex">
+                    <a href="/recuperar" class="m-auto">Olvidate tu contraseña?</a>
+                </div>
+                <app-line> </app-line>
+                <div class="forgot flex">
+                    <span class="font-medium m-auto">Nuevo por aqu&iacute;? <a href="/registro" class="text-primaty-verde">Registrate</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="max-h-screen">
+        <img src="/img/as_login.jpeg" class="object-cover w-full h-full" alt="">
+    </div>
+</section>
