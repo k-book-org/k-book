@@ -9,7 +9,6 @@ import { NavComponent } from './nav/nav.component';
 import { InfoPerfilComponent } from './info-perfil/info-perfil.component';
 import { BtnPerfilInteractionComponent } from './btn-perfil-interaction/btn-perfil-interaction.component';
 
-
 @NgModule({
   declarations: [
     ButtonComponent,
@@ -34,6 +33,6 @@ import { BtnPerfilInteractionComponent } from './btn-perfil-interaction/btn-perf
     NavComponent,
     InfoPerfilComponent,
     BtnPerfilInteractionComponent,
-  ]
+]
 })
 export class SharedModule { }

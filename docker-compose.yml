@@ -5,5 +5,6 @@ services:
     ports:
       - "4200:4200"
     volumes:
-      - ./k-book-app:/kbook-app
-      - /k-book-app/node_modules
+      - ./k-book-app/package.json:/kbook-app/package.json
+      - ./k-book-app/package-lock.json:/kbook-app/package-lock.json
+      - ./k-book-app/src/:/kbook-app/src
