@@ -13,10 +13,8 @@
   box-shadow: 0 0 10px #242422;
   color: #242422;
   border-radius: 35px;
-  padding: 50px;
+  padding: 60px;
   margin: 0 auto;
-
-
 }
 
 .contenido-perfil{
@@ -30,7 +28,7 @@ padding: 5% 0;
   height: 0;
   width: 100%;
 }
-form{
+.form-sep{
   margin-top: 3%;
   display: flex;
   gap: 10px;
@@ -38,4 +36,19 @@ form{
 .separador{
 display: flex;
 gap: 52px;
+}
+.contenedor-cont{
+  margin-top: 3%;
+  display: flex;
+  gap: 11%;
+}
+.editar-perfil h1{
+  font-family: "Archivo Narrow", sans-serif;
+  color: white;
+    font-weight: normal;
+}
+.form-btn{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
