@@ -5,7 +5,9 @@ import { InputFieldComponent } from './input-field/input-field.component';
 import { PasswordFieldComponent } from './password-field/password-field.component';
 import { LineComponent } from './line/line.component';
 import { LogoComponent } from './logo/logo.component';
-
+import {BtnPerfilInteractionComponent} from './btn-perfil-interaction/btn-perfil-interaction.component';
+import {InfoPerfilComponent} from './info-perfil/info-perfil.component'
+import {NavComponent} from './nav/nav.component'
 
 @NgModule({
   declarations: [
@@ -13,7 +15,11 @@ import { LogoComponent } from './logo/logo.component';
     InputFieldComponent,
     PasswordFieldComponent,
     LineComponent,
-    LogoComponent
+    LogoComponent,
+    BtnPerfilInteractionComponent,
+    InfoPerfilComponent,
+    NavComponent
+
   ],
   imports: [
     CommonModule
@@ -23,7 +29,10 @@ import { LogoComponent } from './logo/logo.component';
     InputFieldComponent,
     PasswordFieldComponent,
     LineComponent,
-    LogoComponent
+    LogoComponent,
+    BtnPerfilInteractionComponent,
+    InfoPerfilComponent,
+    NavComponent
   ]
 })
 export class SharedModule { }

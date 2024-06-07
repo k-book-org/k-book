@@ -1,0 +1,18 @@
+button {
+  background: none;
+  color: white;
+  border: none;
+  padding: 0 10px; /* Ajuste inicial del padding */
+  font-family: "Archivo Narrow", sans-serif;
+  cursor: pointer;
+  outline: inherit;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s, padding 0.3s; /* Agregamos transición para padding */
+}
+
+button:hover {
+  background-color: #377483;
+  transform: scale(1.1); /* Aumentamos el tamaño en un 10% */
+  padding: 0 10px; /* Cambiamos el padding durante el hover */
+}
