@@ -46,6 +46,10 @@ gap: 52px;
   font-family: "Archivo Narrow", sans-serif;
   color: white;
     font-weight: normal;
+    margin-bottom: 30px;
+}
+.contenedor-edicion{
+  margin-left: 30px;
 }
 .form-btn{
   display: flex;

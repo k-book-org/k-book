@@ -8,6 +8,7 @@ import { LogoComponent } from './logo/logo.component';
 import { NavComponent } from './nav/nav.component';
 import { InfoPerfilComponent } from './info-perfil/info-perfil.component';
 import { BtnPerfilInteractionComponent } from './btn-perfil-interaction/btn-perfil-interaction.component';
+import { EditFieldInputComponent } from './edit-field-input/edit-field-input.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { BtnPerfilInteractionComponent } from './btn-perfil-interaction/btn-perf
     NavComponent,
     InfoPerfilComponent,
     BtnPerfilInteractionComponent,
+    EditFieldInputComponent,
 
   ],
   imports: [
@@ -33,6 +35,7 @@ import { BtnPerfilInteractionComponent } from './btn-perfil-interaction/btn-perf
     NavComponent,
     InfoPerfilComponent,
     BtnPerfilInteractionComponent,
+    EditFieldInputComponent,
 ]
 })
 export class SharedModule { }
