@@ -56,3 +56,40 @@ gap: 52px;
   flex-direction: column;
   gap: 30px;
 }
+.ft-desc{
+  display: flex;
+  flex-direction: column;
+  max-width: 25%;
+  margin-left: auto;
+  gap: 30px;
+  margin-top: 7%;
+}
+img{
+  object-fit: cover;
+  height: 200px ;
+  width: 200px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+
+.change{
+  width: 80%;
+  display: flex;
+}
+button{
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 18px;
+color: #011E2C;
+background-color: #D9D9D9;
+height: 30px;
+width: 120px;
+border-radius: 8px;
+margin: 0 auto;
+border: none;
+cursor: pointer !important;
+}
+.save-btn{
+
+  width: 140px !important;
+}
