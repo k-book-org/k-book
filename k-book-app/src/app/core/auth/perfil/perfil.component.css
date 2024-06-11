@@ -85,11 +85,14 @@ background-color: #D9D9D9;
 height: 30px;
 width: 120px;
 border-radius: 8px;
-margin: 0 auto;
 border: none;
 cursor: pointer !important;
 }
+.upload-img{
+  margin: 0 auto;
+}
 .save-btn{
-
+  margin-top: 30%;
+margin-left: auto !important;
   width: 140px !important;
 }
