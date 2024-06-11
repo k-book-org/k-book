@@ -10,7 +10,7 @@
 .rectangulo-blanco {
   background-color: white;
   width: 70%;
-  height: 70vh;
+
   position: absolute;
   top: 15%;
 
@@ -26,6 +26,15 @@ margin: 0 auto;
   margin-top: 10%!important;
   margin: 0 auto;
 }
+.contenedor-porpouse{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+  height: 100%;
+}
 .content h1{
   font-size: 50px;
   font-family: "Archivo Narrow", sans-serif;
@@ -36,11 +45,11 @@ margin: 0 auto;
 .botones{
 margin-top: 6%;
 display: inline-flex;
-gap: 390px;
+gap: 480px;
 
 }
-button{
-  color: white;
+button {
+  color: #377483; /* Color del texto cuando no está en hover */
   width: 250px;
   height: 72px;
   font-size: 40px;
@@ -48,7 +57,28 @@ button{
   font-weight: 600;
   border-radius: 20px;
   border: none;
-  background-color: #377483;
-cursor: pointer;
-  box-shadow: 2px 6px 12px 0px black
+  background-color: transparent; /* Fondo transparente inicialmente */
+  cursor: pointer;
+  box-shadow: none; /* Sin sombra inicialmente */
+  transition: all 0.3s ease; /* Transición suave para el hover */
+}
+
+button:hover {
+  color: white; /* Color del texto en hover */
+  background-color: #377483; /* Fondo cuando está en hover */
+  box-shadow: 2px 6px 12px 0px black; /* Sombra en hover */
+}
+img{
+  height: 300px;
+  width: 300px;
+
+}
+.cont-img{
+  margin-top: 2%;
+}
+.flecha-derecha, .flecha-izquierda{
+transform: rotate(21deg);
+}
+.flecha-derecha{
+  transform: rotate(-21deg) scaleX(-1);
 }
