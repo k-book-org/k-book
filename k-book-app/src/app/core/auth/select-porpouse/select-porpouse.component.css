@@ -1,6 +1,54 @@
 .cont-all {
-  background-image: url(/img/bg_ft.jpeg);
+  background-image: url('/img/bg_ft.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.rectangulo-blanco {
+  background-color: white;
+  width: 70%;
+  height: 70vh;
+  position: absolute;
+  top: 15%;
+
+  left: 15%;
+  border-radius: 50px;
+}
+.all{
+  padding: 20px;
+margin: 0 auto;
+}
+.content{
+  text-align: center;
+  margin-top: 10%!important;
+  margin: 0 auto;
+}
+.content h1{
+  font-size: 50px;
+  font-family: "Archivo Narrow", sans-serif;
+  color: #011E2C;
+  font-weight:600;
+}
+
+.botones{
+margin-top: 6%;
+display: inline-flex;
+gap: 390px;
+
+}
+button{
+  color: white;
+  width: 250px;
+  height: 72px;
+  font-size: 40px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-weight: 600;
+  border-radius: 20px;
+  border: none;
+  background-color: #377483;
+cursor: pointer;
+  box-shadow: 2px 6px 12px 0px black
 }
