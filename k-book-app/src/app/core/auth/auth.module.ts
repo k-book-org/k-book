@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { SharedModule } from '../../components/components.module';
 import { RegistroComponent } from './registro/registro.component';
 import{PerfilComponent}from './perfil/perfil.component';
+import { SelectPorpouseComponent } from './select-porpouse/select-porpouse.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import{PerfilComponent}from './perfil/perfil.component';
     AuthComponent,
     LoginComponent,
     RegistroComponent,
-    PerfilComponent
+    PerfilComponent,
+    SelectPorpouseComponent
   ],
   imports: [
     CommonModule,
