@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'porpouse', component: SelectPorpouseComponent },
 ];
 
-@NgModule({
+@NgModule({ 
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
