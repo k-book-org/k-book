@@ -1,1 +1,24 @@
-<p>progress works!</p>
+<div class="contenedor-perfil">
+    <app-nav></app-nav>
+    <div class="contenido-perfil">
+      <div class="wrapper">
+        <app-info-perfil></app-info-perfil>
+        <div class="separador">
+        <form class="form-sep">
+          <app-btn-perfil-interaction [buttonText]="'Perfil'"></app-btn-perfil-interaction>
+          <app-btn-perfil-interaction [buttonText]="'Comunidad'"></app-btn-perfil-interaction>
+        </form>
+        <div class="separador-line"></div>
+  
+      </div>
+      <div class="contenedor-cont">
+        <form class="form-btn">
+          <app-btn-perfil-interaction [buttonText]="'Editar'" class="btn"></app-btn-perfil-interaction>
+          <app-btn-perfil-interaction [buttonText]="'Cursos'" class="btn"></app-btn-perfil-interaction>
+          <app-btn-perfil-interaction [buttonText]="'Mis Tareas'" class="btn"></app-btn-perfil-interaction>
+        </form>
+        <app-userstadistics [texto]="'hola'" [titulo]="'penesor'"></app-userstadistics> 
+      </div>
+      </div>
+    </div>
+  </div>

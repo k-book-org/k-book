@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { SharedModule } from '../../components/components.module';
 import { ProgressRoutingModule } from './progress-routing.module';
 import { ProgressComponent } from './progress.component';
 import { StadisticsComponent } from './stadistics/stadistics.component';
@@ -13,7 +13,8 @@ import { StadisticsComponent } from './stadistics/stadistics.component';
   ],
   imports: [
     CommonModule,
-    ProgressRoutingModule
+    ProgressRoutingModule,
+    SharedModule
   ]
 })
 export class ProgressModule { }
