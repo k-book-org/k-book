@@ -33,5 +33,6 @@ nav {
     margin-right: 30px; 
     font-size: 20px;
     font-family: "Archivo Narrow", sans-serif;
+    cursor: pointer;
   }
   

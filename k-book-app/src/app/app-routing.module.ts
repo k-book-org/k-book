@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
+import { EspacioDeTrabajoComponent } from './core/aprendizaje/espacio-de-trabajo/espacio-de-trabajo.component';
 
 const routes: Routes = [
   { path: 'auth', loadChildren: () => import('./core/auth/auth.module').then(m => m.AuthModule) },
@@ -8,11 +10,18 @@ const routes: Routes = [
 
   { path: 'aprendizaje', loadChildren: () => import('./core/aprendizaje/aprendizaje.module').then(m => m.AprendizajeModule) },
 
-  { path: 'funcionamiento', loadChildren: () => import('./core/funcionamiento/funcionamiento.module').then(m => m.FuncionamientoModule) }
+  { path: 'funcionamiento', loadChildren: () => import('./core/aprendizaje/funcionamiento/funcionamiento.module').then(m => m.FuncionamientoModule) },
+
+  {path: 'espacio-de-trabajo', component: EspacioDeTrabajoComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(routes)
+  ],
+  exports: [
+    RouterModule
+  ]
 })
 export class AppRoutingModule { }

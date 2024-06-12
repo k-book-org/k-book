@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { AprendizajeRoutingModule } from './aprendizaje-routing.module';
 import { AprendizajeComponent } from './aprendizaje.component';
+import { EspacioDeTrabajoComponent } from './espacio-de-trabajo/espacio-de-trabajo.component';
 
 
 @NgModule({
   declarations: [
-    AprendizajeComponent
+    AprendizajeComponent,
+    EspacioDeTrabajoComponent
   ],
   imports: [
     CommonModule,
