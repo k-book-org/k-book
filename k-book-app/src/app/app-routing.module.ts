@@ -10,9 +10,7 @@ const routes: Routes = [
 
   { path: 'aprendizaje', loadChildren: () => import('./core/aprendizaje/aprendizaje.module').then(m => m.AprendizajeModule) },
 
-  { path: 'funcionamiento', loadChildren: () => import('./core/funcionamiento/funcionamiento.module').then(m => m.FuncionamientoModule) },
-  { path: 'progreso', loadChildren: () => import('./core/progress/progress.module').then(m => m.ProgressModule) }
-  {path: 'espacio-de-trabajo', component: EspacioDeTrabajoComponent}
+    { path: 'progreso', loadChildren: () => import('./core/progress/progress.module').then(m => m.ProgressModule) },
 ];
 
 @NgModule({
