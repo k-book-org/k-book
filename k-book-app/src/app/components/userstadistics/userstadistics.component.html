@@ -1,5 +1,10 @@
-<div class="capsula">   
-    <h1>{{titulo}}</h1>
+<div class="capsula">
+  <div class="contenido">
+    <h2>{{titulo}}</h2>
     <p>{{ texto }}</p>
-
+    <div class="progress">
+      <span class="progress-text">{{ percentage }}%</span>
+      <div class="progress-bar" [style.width.%]="percentage"></div>
+    </div>
+  </div>
 </div>

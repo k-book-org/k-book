@@ -2,10 +2,10 @@
     background-image: url(/img/bg_ft.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
   }
   .wrapper {
-  
+
     width: 80%;
     background: transparent !important;
     border: 2px solid #FDFBF6;
@@ -18,12 +18,12 @@
     margin: 0 auto;
     height: 60%;
   }
-  
+
   .contenido-perfil{
   padding: 7% 0;
   }
-  
-  
+
+
   .separador-line {
     margin-top: 4%;
     border-top: 1px solid white;
@@ -50,5 +50,4 @@
     flex-direction: column;
     gap: 30px;
   }
-  
-  
+
