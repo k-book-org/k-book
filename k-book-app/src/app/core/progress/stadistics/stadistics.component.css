@@ -1,0 +1,25 @@
+h1 {
+  color: white !important;
+  font-family: "Archivo Narrow", sans-serif;
+  font-weight: normal !important;
+  margin-bottom: 8%;
+}
+
+.content {
+  width: 100%;
+  align-items: center;
+}
+
+.lista-cursos {
+  display: flex;
+  gap: 20%;
+  margin: 0 auto;
+  justify-content: center; /* Para asegurar que los elementos internos estén centrados */
+margin-right: 5%;
+}
+
+.columnas {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
