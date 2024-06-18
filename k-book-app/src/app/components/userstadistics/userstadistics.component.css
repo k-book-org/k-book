@@ -3,7 +3,8 @@
   border-radius: 20px;
   border: 2px solid;
   background-color: rgba(1, 30, 44, 0.5);
-  width: 120%;
+  width: 125%;
+  height: 110%;
   box-shadow: 0 0 0 white;
   transition: transform .4s, box-shadow .4s, background-color .4s;
 }
