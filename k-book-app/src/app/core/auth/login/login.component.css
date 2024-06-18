@@ -2,6 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* CSS puro y duro */
 .contenedor-titulo{
     font-family: "Kanit", sans-serif;
     color: #011E2C;

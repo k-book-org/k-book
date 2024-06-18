@@ -10,6 +10,7 @@ import { InfoPerfilComponent } from './info-perfil/info-perfil.component';
 import { BtnPerfilInteractionComponent } from './btn-perfil-interaction/btn-perfil-interaction.component';
 import { EditFieldInputComponent } from './edit-field-input/edit-field-input.component';
 import { UserstadisticsComponent } from './userstadistics/userstadistics.component';
+import { ItemPreguntaComponent } from './item-pregunta/item-pregunta.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { UserstadisticsComponent } from './userstadistics/userstadistics.compone
     BtnPerfilInteractionComponent,
     EditFieldInputComponent,
     UserstadisticsComponent,
+    ItemPreguntaComponent,
 
   ],
   imports: [
@@ -39,6 +41,7 @@ import { UserstadisticsComponent } from './userstadistics/userstadistics.compone
     BtnPerfilInteractionComponent,
     EditFieldInputComponent,
     UserstadisticsComponent,
+    ItemPreguntaComponent,
 ]
 })
 export class SharedModule { }
