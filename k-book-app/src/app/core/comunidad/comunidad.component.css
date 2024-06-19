@@ -2,3 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.cont-back{
+    background-image: url(/img/bg_ft.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
