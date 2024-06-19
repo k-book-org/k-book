@@ -4,7 +4,8 @@ nav {
 
     align-items: center;
     display: flex;
-    border-bottom: 3px solid white
+    border-bottom: 3px solid white;
+    transition: all 0.5s ease;
 }
 
   .contenedor-nav {
@@ -43,4 +44,7 @@ background-color: #fff;
 color: black;
 border-radius: 10px;
 font-weight: bold;
+}
+.scrol{
+  height: 100px;
 }
