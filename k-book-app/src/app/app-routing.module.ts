@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: 'aprendizaje', loadChildren: () => import('./core/aprendizaje/aprendizaje.module').then(m => m.AprendizajeModule) },
 
     { path: 'progreso', loadChildren: () => import('./core/progress/progress.module').then(m => m.ProgressModule) },
+  { path: 'actividad', loadChildren: () => import('./core/actividad/actividad.module').then(m => m.ActividadModule) },
 ];
 
 @NgModule({
