@@ -15,6 +15,7 @@ import { UserstadisticsComponent } from './userstadistics/userstadistics.compone
 import { ItemPreguntaComponent } from './item-pregunta/item-pregunta.component';
 import { MiniBuscadorComponent } from './mini-buscador/mini-buscador.component';
 import { BuscadorComponent } from './buscador/buscador.component';
+import {ActividadPreguntasComponent} from './actividad-preguntas/actividad-preguntas.component'
 
 @NgModule({
   declarations: [
@@ -31,10 +32,12 @@ import { BuscadorComponent } from './buscador/buscador.component';
     ItemPreguntaComponent,
     MiniBuscadorComponent,
     BuscadorComponent,
+    ActividadPreguntasComponent,
+
   ],
   imports: [
     CommonModule,
-    FormsModule 
+    FormsModule
   ],
   exports: [
     ButtonComponent,
@@ -50,6 +53,8 @@ import { BuscadorComponent } from './buscador/buscador.component';
     ItemPreguntaComponent,
     MiniBuscadorComponent,
     BuscadorComponent,
+    ActividadPreguntasComponent,
+
   ]
 })
 export class SharedModule { }

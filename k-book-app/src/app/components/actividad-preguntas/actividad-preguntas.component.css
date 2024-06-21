@@ -1,0 +1,34 @@
+.fondo {
+  color: white;
+  font-family: "Archivo Narrow", sans-serif;
+  font-weight: 600;
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 25px;
+  background-color: rgba(1, 30, 44, 0.5);
+  margin-bottom: 3%;
+  transition: all 0.2s;
+}
+.fondo:hover{
+  transform: scale(1.02);
+  background-color: rgba(1, 30, 44, 0.774);
+  box-shadow: 0 0 10px white;
+}
+h2 {
+  font-size: 35px;
+  max-width: 70%;
+}
+p {
+  font-weight: normal !important;
+}
+.descripcion {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: auto;
+  border-left: 2px solid white !important;
+  padding-left: 30px;
+}

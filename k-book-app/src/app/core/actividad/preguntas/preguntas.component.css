@@ -1,70 +1,69 @@
 .contenedor-perfil {
-    background-image: url(/img/bg_ft.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-  }
-  .wrapper {
+  background-image: url(/img/bg_ft.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.wrapper {
+  width: 80%;
+  background: transparent !important;
+  border: 2px solid #fdfbf6;
+  -webkit-backdrop-filter: blur(30px) !important;
+  backdrop-filter: blur(30px) !important;
+  box-shadow: 0 0 10px #242422;
+  color: #242422;
+  border-radius: 35px;
+  padding: 60px;
+  margin: 0 auto;
+  height: 60%;
+}
 
-    width: 80%;
-    background: transparent !important;
-    border: 2px solid #FDFBF6;
-    -webkit-backdrop-filter: blur(30px) !important;
-    backdrop-filter: blur(30px) !important;
-    box-shadow: 0 0 10px #242422;
-    color: #242422;
-    border-radius: 35px;
-    padding: 60px;
-    margin: 0 auto;
-    height: 60%;
-  }
-
-  .contenido-perfil{
+.contenido-perfil {
   padding: 7% 0;
-  }
+}
 
-
-  .separador-line {
-    margin-top: 4%;
-    border-top: 1px solid white;
-    height: 0;
-    width: 100%;
-  }
-  .form-sep{
-    margin-top: 3%;
-    display: flex;
-    gap: 10px;
-  }
-  .separador{
+.separador-line {
+  margin-top: 4%;
+  border-top: 1px solid white;
+  height: 0;
+  width: 100%;
+}
+.form-sep {
+  margin-top: 3%;
+  display: flex;
+  gap: 10px;
+}
+.separador {
   display: flex;
   gap: 52px;
-  }
-  .cont-general{
-    width: 100%;
-  }
-  .contenedor-cont{
-    margin-top: 3%;
-    display: flex;
-    gap: 11%;
-  }
+}
+.cont-general {
+  width: 100%;
+}
+.contenedor-cont {
+  margin-top: 3%;
+  display: flex;
+  gap: 11%;
+}
 
-  .form-btn{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  .head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+.form-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5%;
 }
 
 .head h1 {
-    margin-right: auto;
-    color: white;
-    font-family: "Archivo Narrow", sans-serif;
-    font-weight: normal;
-    font-size: 38px;
-    margin-left: 20px;
+  margin-right: auto;
+  color: white;
+  font-family: "Archivo Narrow", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  margin-left: 20px;
 }
