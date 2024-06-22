@@ -8,6 +8,7 @@
   border-radius: 30px;
   align-items: center;
   box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  font-family: "Archivo Narrow",sans-serif;
 }
 .box:hover input{
   width: 300px;
@@ -16,7 +17,7 @@
   width: 0;
   outline: none;
   border: none;
-  font-weight: 500;
+  font-weight: normal !important;
   transition: .8s;
   background: transparent ;
 }
