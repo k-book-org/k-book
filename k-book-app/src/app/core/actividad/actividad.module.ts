@@ -5,12 +5,14 @@ import { ActividadRoutingModule } from './actividad-routing.module';
 import { ActividadComponent } from './actividad.component';
 import { PreguntasComponent } from './preguntas/preguntas.component';
 import { SharedModule } from '../../components/components.module';
+import { RespuestasComponent } from './respuestas/respuestas.component';
 
 
 @NgModule({
   declarations: [
     ActividadComponent,
-    PreguntasComponent
+    PreguntasComponent,
+    RespuestasComponent
   ],
   imports: [
     CommonModule,

@@ -11,6 +11,7 @@
   background-color: rgba(1, 30, 44, 0.5);
   margin-bottom: 3%;
   transition: all 0.2s;
+  cursor: pointer;
 }
 .fondo:hover{
   transform: scale(1.02);
