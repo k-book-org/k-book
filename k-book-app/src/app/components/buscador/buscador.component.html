@@ -1,10 +1,15 @@
-<div class="search-container">
-  <input
+<body>
+
+  <div class="box">
+    <input
     type="text"
-    id="field-{{label}}-{{type}}"
+    id="field-{{ label }}-{{ type }}"
     (click)="clearSearchText()"
     [(ngModel)]="textoIngresado"
-    placeholder={{label}}
-  >
-  <img src="/img/lupa.png" alt="Buscar" class="search-icon">
-</div>
+    placeholder="{{ label }}"
+    />
+    <a href="#">
+      <i class="fas fa-search"></i>
+    </a>
+  </div>
+</body>
