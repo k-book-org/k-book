@@ -1,0 +1,23 @@
+.editor {
+    background-color: #011E2C;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .editor-textarea {
+    width: 58%;
+    height: 300px;
+    border: 1px solid #011E2C; 
+    background-color: #011E2C; 
+    color: white;
+    font-size: 14px;
+    padding: 8px;
+    resize: vertical;
+  }
+  
+  .editor-textarea:focus {
+    outline: none; /* Elimina el contorno al enfocar */
+    border-color: #66afe9; /* Cambia el color del borde al enfocar */
+  }
+  

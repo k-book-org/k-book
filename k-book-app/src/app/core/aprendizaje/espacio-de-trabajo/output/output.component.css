@@ -1,0 +1,44 @@
+.output {
+    background-color: black;
+    color: green;
+    font-family: monospace;
+    padding: 10px;
+    border-radius: 8px;
+    overflow-y: auto; 
+}
+ 
+
+.control-button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.yellow {
+    background-color: yellow;
+    color: black;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.output-textarea {
+    width: 100%;
+    height: 190px;
+    border: 1px solid black;
+    background-color: black;
+    color: green;
+    font-family: monospace;
+    padding: 8px;
+    resize: vertical;
+}
+
+.output-textarea:focus {
+    outline: none;
+    border-color: #66afe9;
+}

@@ -1,0 +1,10 @@
+<div class="output" [class.hidden] = "outputHidden">
+    <div class="output-controls">
+        <button class="control-button yellow" (click)="toggleOutputVisibility()"></button>
+        <button class="control-button red" (click)="closeOutput()"></button>
+    </div>
+    <textarea id="terminal" name="terminal" class="output-textarea" [hidden]="outputHidden">{{ defaultMessage }}</textarea>
+
+    
+</div> 
+ 
