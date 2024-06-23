@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './ejercicios.component.css'
 })
 export class EjerciciosComponent {
+  isEnunciadoVisible: boolean = true;
 
+  toggleEnunciado() {
+    this.isEnunciadoVisible = !this.isEnunciadoVisible;
+  }
 }
