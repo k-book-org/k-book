@@ -12,11 +12,11 @@
             </form>
             <div class="content-help w-full">
                 <div class="recuperar-password flex">
-                    <a routerLink="/recuperar" class="m-auto">Olvidate tu contraseña?</a>
+                    <a [routerLink]="'/auth/recuperar'" class="m-auto">Olvidate tu contraseña?</a>
                 </div>
                 <app-line> </app-line>
                 <div class="forgot flex">
-                    <span class="font-medium m-auto">Nuevo por aqu&iacute;? <a href="/auth/registro" class="text-primaty-verde">Registrate</a></span>
+                    <span class="font-medium m-auto">Nuevo por aqu&iacute;? <a [routerLink]="'/auth/registro'" class="text-primaty-verde">Registrate</a></span>
                 </div>
             </div>
         </div>

@@ -1,0 +1,65 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "username": "CVelasquez",
+            "nombre": "Christian",
+            "apellido": "velasquez",
+            "birthday": "01-01-2005",
+            "email": "email@email.com",
+            "password": "1234"
+        },
+        {
+            "id": 2,
+            "username": "XXX",
+            "nombre": "Joaquin",
+            "apellido": "Eguia",
+            "birthday": "",
+            "email": "sexo@lein.com",
+            "password": "sexo"
+        },
+        {
+            "id": 3,
+            "username": "Brunix3004",
+            "nombre": "Bruno",
+            "apellido": "Medina",
+            "birthday": "",
+            "email": "bruno@medina.com",
+            "password": "brufas"
+        }
+    ],
+    "posts":[
+        {
+            "id": 1,
+            "titulo": "¿Como escribir “Hola mundo” en c++ ?",
+            "descripcion": "En c++ no se usa printf ni println, se usa cout << y endl;",
+            "fecha-publicacion": "15:03 el 20 jun 2024",
+            "autor_id": 2,
+            "etiquetas": ["c++", "hola mundo"]
+        },
+        {
+            "id": 2,
+            "titulo": "¿Como se dice “El gato se cayó en el agua y se ahogó” en inglés?",
+            "descripcion": "No sé como decir que el gato se cayó en el agua y se ahogó en inglés",
+            "fecha-publicacion": "15:13 el 23 abr 2024",
+            "autor_id": 1,
+            "etiquetas": ["miau-miau", "glu-glu", "ingles"]
+        }
+    ],
+    "respuestas": [
+        {
+            "id": 1,
+            "post_id": 1,
+            "respuesta": "Usar cout << “Hola mundo” << endl;",
+            "fecha-publicacion": "15:03 el 20 jun 2024",
+            "autor_id": 1
+        },
+        {
+            "id": 2,
+            "post_id": 2,
+            "respuesta": "The Miau cataplum in the water and glu glu glu and no más miau miau",
+            "fecha-publicacion": "15:20 el 23 abr 2024",
+            "autor_id": 1
+        }
+    ]
+}

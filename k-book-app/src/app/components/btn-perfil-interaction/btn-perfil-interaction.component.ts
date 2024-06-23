@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class BtnPerfilInteractionComponent {
   @Input() buttonText: string = '';
+  @Input() routerLink: string = '';
 }
