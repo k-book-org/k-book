@@ -1,0 +1,23 @@
+.editor {
+    background-color: #011E2C;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .editor-textarea {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 300px; /* Altura deseada del textarea */
+    border: 1px solid #011E2C; /* Borde del textarea */
+    background-color: #011E2C; /* Color de fondo */
+    color: white; /* Color del texto */
+    font-size: 14px; /* Tamaño de la fuente */
+    padding: 8px; /* Espacio interno */
+    resize: vertical; /* Permite al usuario redimensionar verticalmente */
+  }
+  
+  .editor-textarea:focus {
+    outline: none; /* Elimina el contorno al enfocar */
+    border-color: #66afe9; /* Cambia el color del borde al enfocar */
+  }
+  

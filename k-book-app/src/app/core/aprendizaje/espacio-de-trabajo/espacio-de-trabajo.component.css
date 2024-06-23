@@ -1,0 +1,39 @@
+.main-container {
+  background-color: #011E2C;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+} 
+
+.documentacion {
+  flex: 0 0 500px;
+  background-color: #011E2C;
+  color: white;
+}
+
+.main-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+} 
+
+.main-content > * {
+  flex: 1;
+  
+}
+
+.editor {
+  flex: 1;
+  background-color: #011E2C;
+  color: white;
+}
+
+.output {
+  flex: 1;
+  background-color: black;
+  border-radius: 15px 5px 0 0;
+  color: green;
+  font-family: monospace;
+}

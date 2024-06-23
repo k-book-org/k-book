@@ -1,0 +1,50 @@
+.container {
+    max-width: 75%;
+    height: 50px;
+    border: 0.5px #377483 solid;
+    border-radius: 0px 0px 15px 8px;
+    background-color: #377483;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    position: relative;
+}
+
+.container button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.image {
+    height: 50px;
+    width: 50px;
+}
+.boton{
+    height: 40px;
+    width: 40px;
+    margin: 0 auto;
+}
+
+.text {
+    font-family: "Kanit", sans-serif;
+    font-size: smaller;
+    color: #fff;
+}
+
+.actions {
+    margin-left: 10px; 
+    display: flex; 
+    align-items: center;
+}
+
+.actions a {
+    margin-right: 20px; 
+    
+}
+
+.action {
+    height: 30px;
+    width: 30px;
+}
