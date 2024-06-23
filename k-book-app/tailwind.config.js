@@ -14,7 +14,7 @@ module.exports = {
         "gris": "#D9D9D9",
       },
       backgroundImage: {
-        'space': "url(/img/bg_ft.jpeg)",
+        'space': "url(/img/bg_ft.jpeg);background-repeat: no-repeat;",
       },
       fontFamily: {
         'archivo': ['"Archivo Narrow"', 'sans-serif'],

@@ -15,6 +15,7 @@ import { UserstadisticsComponent } from './userstadistics/userstadistics.compone
 import { ItemPreguntaComponent } from './item-pregunta/item-pregunta.component';
 import { MiniBuscadorComponent } from './mini-buscador/mini-buscador.component';
 import { BuscadorComponent } from './buscador/buscador.component';
+import { EtiquetaComponent } from './etiqueta/etiqueta.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { BuscadorComponent } from './buscador/buscador.component';
     ItemPreguntaComponent,
     MiniBuscadorComponent,
     BuscadorComponent,
+    EtiquetaComponent,
   ],
   imports: [
     CommonModule,
