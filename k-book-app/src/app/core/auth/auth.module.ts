@@ -8,7 +8,7 @@ import { SharedModule } from '../../components/components.module';
 import { RegistroComponent } from './registro/registro.component';
 import{PerfilComponent}from './perfil/perfil.component';
 import { SelectPorpouseComponent } from './select-porpouse/select-porpouse.component';
-
+ 
 
 @NgModule({
   declarations: [
