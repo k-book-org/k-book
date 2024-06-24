@@ -6,14 +6,14 @@
   }
   
   .editor-textarea {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    height: 300px; /* Altura deseada del textarea */
-    border: 1px solid #011E2C; /* Borde del textarea */
-    background-color: #011E2C; /* Color de fondo */
-    color: white; /* Color del texto */
-    font-size: 14px; /* Tamaño de la fuente */
-    padding: 8px; /* Espacio interno */
-    resize: vertical; /* Permite al usuario redimensionar verticalmente */
+    width: 58%;
+    height: 300px;
+    border: 1px solid #011E2C; 
+    background-color: #011E2C; 
+    color: white;
+    font-size: 14px;
+    padding: 8px;
+    resize: vertical;
   }
   
   .editor-textarea:focus {

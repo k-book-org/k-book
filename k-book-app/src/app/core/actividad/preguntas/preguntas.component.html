@@ -1,0 +1,33 @@
+<div class="contenedor-perfil">
+    <app-nav></app-nav>
+    <div class="contenido-perfil">
+      <div class="wrapper">
+        <app-info-perfil></app-info-perfil>
+        <div class="separador">
+        <form class="form-sep">
+          <app-btn-perfil-interaction [buttonText]="'Perfil'"></app-btn-perfil-interaction>
+          <app-btn-perfil-interaction [buttonText]="'Comunidad'"></app-btn-perfil-interaction>
+        </form>
+        <div class="separador-line"></div>
+
+      </div>
+      <div class="contenedor-cont">
+        <form class="form-btn">
+          <app-btn-perfil-interaction [buttonText]="'Preguntas'" class="btn"></app-btn-perfil-interaction>
+          <app-btn-perfil-interaction [buttonText]="'Respuestas'" class="btn"></app-btn-perfil-interaction>
+          <app-btn-perfil-interaction [buttonText]="'Posts Seguidos'" class="btn"></app-btn-perfil-interaction>
+        </form>
+        <div class="cont-general">
+            <div class="head">
+                <h1>2 Preguntas</h1>
+                <app-buscador label="Buscar Preguntas" type="form"></app-buscador>
+            </div>
+            <div class="contenido-preguntas">
+            <app-actividad-preguntas [titulo]="'¿Como escribir “Hola mundo” en c++ ?'" [descripcion]="'Resuelta'" [otroTexto]="'15:03 el 20 jun 2024'"></app-actividad-preguntas>
+            <app-actividad-preguntas [titulo]="'¿Como se “dice el gato se cayó en el agua y se ahogó” en inglés?'" [descripcion]="'Resuelta'" [otroTexto]="'15:03 el 20 jun 2024'"></app-actividad-preguntas>
+            </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>

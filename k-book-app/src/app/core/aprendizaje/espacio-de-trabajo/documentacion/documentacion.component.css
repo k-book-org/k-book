@@ -1,66 +1,70 @@
-.main-container{
-    width: 100%;    
-    height: 100%;
-    border-right: 0.5px solid white;
-    border-radius: 15px;    
+.main-container {
+  border-right: 0.5px solid white;
+  border-radius: 15px;
+  height: 100%;
+  margin-top:-30px ;
 }
-
-.Titulo{
-    background-color: #377483;
-    margin-top: 15px !important;
-    border: 0.5px solid #377483;
-    border-radius: 5px;
-    max-width: 40%;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 15px;    
+.text {
+  margin-top: 30px!important;
+  max-width: 86%;
+  margin: 0 auto;
+  padding: 1px;
 }
-.Titulo h2 {
-    font-family: 'Archivo Narrow', sans-serif; 
-    font-weight: 600 !important;
-    font-size: x-large;
+.Titulo {
+  background-color: #377483;
+  margin-top: 15px !important;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 15px;
+  width: fit-content;
+  padding: 0 10px;
+  margin: 40px auto !important;
+  font-family: "Archivo Narrow", sans-serif;
+  font-weight: normal !important;
+  font-size: 40px;
 }
-
 .subtitulo {
-    margin: 0px 5px 10px 15px;
-    font-family: 'Archivo Narrow', sans-serif; 
-    font-size: large;
+  font-family: "Archivo Narrow", sans-serif;
+  margin-bottom: 15px;
+  font-size: 40px;
 }
-
+.subtitulo h4{
+  font-weight: 600;
+}
 .descripcion {
-    margin: 15px 70px 25px 15px;
-    font-family: "Arvo", serif;
-    font-size: 65%;
-    font-weight: lighter; 
+  font-family: "Arvo", serif;
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
-.codigo{
-    margin: 25px 15px 25px 15px;
-    font-family: "Ubuntu Mono", monospace;
-    font-size: smaller;
+.codigo {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: smaller;
 }
 
 .codigo p {
-    margin-bottom: 3px;
+  margin-bottom: 3px;
+  font-size: 24px;
 }
 
-.fila_secundaria{
-    margin-left: 5px;
+.fila_secundaria {
+  margin-left: 5px;
 }
 
-.funciones {    
-    margin-bottom: 15px;    
-    color: #8743F5;
+.funciones {
+  margin-bottom: 15px;
+  color: #8743f5;
 }
-.variable{
-    color: #FBE419;
+.variable {
+  color: #fbe419;
 }
-.palabras{
-    color: #23C75B
+.palabras {
+  color: #23c75b;
 }
-.parametros{
-    color: #1D82CC
+.parametros {
+  color: #1d82cc;
 }
-.llaves{
-    color: #FBA919 
+.llaves {
+  color: #fba919;
 }

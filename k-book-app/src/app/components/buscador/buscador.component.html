@@ -1,0 +1,12 @@
+  <div class="box">
+    <input
+    type="text"
+    id="field-{{ label }}-{{ type }}"
+    (click)="clearSearchText()"
+    [(ngModel)]="textoIngresado"
+    placeholder="{{ label }}"
+    />
+    <a href="#">
+      <i class="fas fa-search"></i>
+    </a>
+  </div>

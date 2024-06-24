@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms'; // Importar FormsModule
+
 import { ButtonComponent } from './button/button.component';
 import { InputFieldComponent } from './input-field/input-field.component';
 import { PasswordFieldComponent } from './password-field/password-field.component';
@@ -12,6 +14,8 @@ import { EditFieldInputComponent } from './edit-field-input/edit-field-input.com
 import { UserstadisticsComponent } from './userstadistics/userstadistics.component';
 import { ItemPreguntaComponent } from './item-pregunta/item-pregunta.component';
 import { MiniBuscadorComponent } from './mini-buscador/mini-buscador.component';
+import { BuscadorComponent } from './buscador/buscador.component';
+import {ActividadPreguntasComponent} from './actividad-preguntas/actividad-preguntas.component'
 
 @NgModule({
   declarations: [
@@ -27,10 +31,13 @@ import { MiniBuscadorComponent } from './mini-buscador/mini-buscador.component';
     UserstadisticsComponent,
     ItemPreguntaComponent,
     MiniBuscadorComponent,
+    BuscadorComponent,
+    ActividadPreguntasComponent,
 
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     ButtonComponent,
@@ -45,6 +52,9 @@ import { MiniBuscadorComponent } from './mini-buscador/mini-buscador.component';
     UserstadisticsComponent,
     ItemPreguntaComponent,
     MiniBuscadorComponent,
-]
+    BuscadorComponent,
+    ActividadPreguntasComponent,
+
+  ]
 })
 export class SharedModule { }

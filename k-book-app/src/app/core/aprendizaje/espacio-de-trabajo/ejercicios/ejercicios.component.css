@@ -1,0 +1,45 @@
+ .main-container{
+    width: 100%;
+    max-height: 373px;
+ }
+
+ .contenido{
+    margin: 5px 10px;
+    font-family: 'Archivo Narrow', sans-serif;
+
+ }
+
+ .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:25px 0 ;
+}
+
+.title-container h2{
+    margin: 0 10px 0 0;
+    font-size: 34px;
+    font-weight: normal !important;
+}
+
+ .enunciado{
+  margin-top: 35px;
+    font-size: 28px;
+ }
+ .enunciado p{
+  font-weight: lighter;
+ }
+.btn-bajo{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-bajo.rotated {
+    transform: rotate(180deg);
+}
+
+.linea {
+    margin-top: 35px;
+}
