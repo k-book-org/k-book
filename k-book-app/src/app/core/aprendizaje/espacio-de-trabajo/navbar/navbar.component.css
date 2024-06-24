@@ -1,11 +1,11 @@
 .container {
-    max-width: 75%;
-    height: 50px;
+    max-width: 80%;
+    height: 90px;
     border: 0.5px #377483 solid;
     border-radius: 0px 0px 15px 8px;
     background-color: #377483;
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     position: relative;
 }
@@ -14,37 +14,42 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    margin-right: 5px;
+    margin: 0 auto;
 }
 
 .image {
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
 }
 .boton{
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     margin: 0 auto;
 }
 
 .text {
     font-family: "Kanit", sans-serif;
-    font-size: smaller;
+    font-size: 24px;
     color: #fff;
+    font-weight: 300;
 }
 
 .actions {
-    margin-left: 10px; 
-    display: flex; 
+    margin-left: 10px;
+    display: flex;
     align-items: center;
+    gap: 15px;
+    margin-right: 25px;
 }
 
-.actions a {
-    margin-right: 20px; 
-    
-}
 
 .action {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
 }
