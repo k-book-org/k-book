@@ -12,6 +12,7 @@ import { EjerciciosComponent } from './espacio-de-trabajo/ejercicios/ejercicios.
 import { DocumentationComponent } from './documentation/documentation.component';
 import { MenuComponent } from './documentation/menu/menu.component';
 import { ContenidoComponent } from './documentation/contenido/contenido.component';
+import { SharedModule } from '../../components/components.module';
  
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ContenidoComponent } from './documentation/contenido/contenido.componen
   ],
   imports: [
     CommonModule,
-    AprendizajeRoutingModule
+    AprendizajeRoutingModule,
+    SharedModule,
   ]
 })
 export class AprendizajeModule { }
