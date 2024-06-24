@@ -11,5 +11,5 @@ export class ItemPreguntaComponent {
   @Input() cantRespuestas!: Number;
   @Input() autor!: string;
   @Input() fecha!: string;
-  @Input() etiquetas!: Array<string>;
+  @Input() etiquetas!: string[];
 }

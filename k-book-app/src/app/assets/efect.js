@@ -1,5 +1,6 @@
 
 //nav
+alert("hols")
 document.addEventListener("DOMContentLoaded", function () {
     const nav = document.querySelector('.nav');
 

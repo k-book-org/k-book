@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './comunidad.component.css'
 })
 export class ComunidadComponent {
-
+  etiquetas: string[] = ['c++', 'pseint', 'kaeli']
 }
