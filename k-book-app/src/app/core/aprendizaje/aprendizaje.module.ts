@@ -9,6 +9,10 @@ import { EditorComponent } from './espacio-de-trabajo/editor/editor.component';
 import { AppOutputComponent } from './espacio-de-trabajo/output/output.component';
 import { NavbarComponent } from './espacio-de-trabajo/navbar/navbar.component';
 import { EjerciciosComponent } from './espacio-de-trabajo/ejercicios/ejercicios.component';
+import { DocumentationComponent } from './documentation/documentation.component';
+import { MenuComponent } from './documentation/menu/menu.component';
+import { ContenidoComponent } from './documentation/contenido/contenido.component';
+import { SharedModule } from '../../components/components.module';
  
 @NgModule({
   declarations: [
@@ -18,11 +22,15 @@ import { EjerciciosComponent } from './espacio-de-trabajo/ejercicios/ejercicios.
     EditorComponent,
     AppOutputComponent,
     NavbarComponent,
-    EjerciciosComponent
+    EjerciciosComponent,
+    DocumentationComponent,
+    MenuComponent,
+    ContenidoComponent 
   ],
   imports: [
     CommonModule,
-    AprendizajeRoutingModule
+    AprendizajeRoutingModule,
+    SharedModule,
   ]
 })
 export class AprendizajeModule { }

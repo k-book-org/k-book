@@ -1,0 +1,33 @@
+.documentation-container {
+    display: flex;
+    height: 100vh;
+}
+
+.menu-opciones {
+    flex: 0 0 25%;
+    background-color: #011E2C;
+    height: 100vh; 
+}
+
+.contenedor-contenido {
+    flex: 0 0 75%;
+    display: flex;
+    flex-direction: column;
+    background-image: url('/img/bg_ft.jpeg');
+    /*background-image: url('/img/ft_fgpass.jpeg'); */
+    background-size: cover;
+    background-position: center;
+}
+
+.nav {
+    flex: 0 0 15%; 
+    background-color: transparent; 
+    width: 100%;
+}
+
+.contenido {
+    flex: 0 0 85%;
+    background-color: transparent;
+    overflow-y: auto;
+    width: 100%;
+}
