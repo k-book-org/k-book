@@ -15,10 +15,10 @@
   margin-top: 15px !important;
   border-radius: 15px;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   width: fit-content;
   padding: 0 10px;
-  margin: 40px auto !important;
+  margin: 20px auto !important;
   font-family: "Archivo Narrow", sans-serif;
   font-weight: normal !important;
   font-size: 40px;
@@ -26,16 +26,16 @@
 .subtitulo {
   font-family: "Archivo Narrow", sans-serif;
   margin-bottom: 15px;
-  font-size: 40px;
+  font-size: 30px;
 }
 .subtitulo h4{
   font-weight: 600;
 }
 .descripcion {
   font-family: "Arvo", serif;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: normal;
-  margin-top: 15px;
+  margin-top: 12px;
   margin-bottom: 15px;
 }
 .codigo {
@@ -45,7 +45,7 @@
 
 .codigo p {
   margin-bottom: 3px;
-  font-size: 24px;
+  font-size: 14px;
 }
 
 .fila_secundaria {
