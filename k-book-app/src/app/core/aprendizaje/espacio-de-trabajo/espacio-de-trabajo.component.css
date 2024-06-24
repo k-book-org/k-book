@@ -5,7 +5,7 @@
 .container {
   display: flex;
   height: 100vh;
-} 
+}
 
 .documentacion {
   flex: 0 0 500px;
@@ -17,11 +17,11 @@
   flex: 2;
   display: flex;
   flex-direction: column;
-}  
+}
 
 .main-content > * {
   flex: 1;
-  
+
 }
 
 .editor-container {
@@ -36,12 +36,12 @@
 }
 
 .ejercicios {
-  width: 25%; /* Ocupa el 25% del ancho */
-  flex: 0 0 30%;  
+  width: 18%; /* Ocupa el 25% del ancho */
+  flex: 0 0 30%;
   background-color: #011E2C;
   color: white;
   position: absolute;
-  right: 0;
+  right: 20px;
   top: 0;
 }
 
