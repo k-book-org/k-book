@@ -16,6 +16,7 @@ import { ItemPreguntaComponent } from './item-pregunta/item-pregunta.component';
 import { MiniBuscadorComponent } from './mini-buscador/mini-buscador.component';
 import { BuscadorComponent } from './buscador/buscador.component';
 import { EtiquetaComponent } from './etiqueta/etiqueta.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { EtiquetaComponent } from './etiqueta/etiqueta.component';
   ],
   imports: [
     CommonModule,
-    FormsModule 
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     ButtonComponent,
