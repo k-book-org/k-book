@@ -15,11 +15,9 @@ import { UserstadisticsComponent } from './userstadistics/userstadistics.compone
 import { ItemPreguntaComponent } from './item-pregunta/item-pregunta.component';
 import { MiniBuscadorComponent } from './mini-buscador/mini-buscador.component';
 import { BuscadorComponent } from './buscador/buscador.component';
-<<<<<<< HEAD
 import {ActividadPreguntasComponent} from './actividad-preguntas/actividad-preguntas.component'
-=======
 import { EtiquetaComponent } from './etiqueta/etiqueta.component';
->>>>>>> 07df461972b82eb17af76acd9b3700f42a4f2a21
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,16 +34,13 @@ import { EtiquetaComponent } from './etiqueta/etiqueta.component';
     ItemPreguntaComponent,
     MiniBuscadorComponent,
     BuscadorComponent,
-<<<<<<< HEAD
     ActividadPreguntasComponent,
-
-=======
     EtiquetaComponent,
->>>>>>> 07df461972b82eb17af76acd9b3700f42a4f2a21
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     ButtonComponent,

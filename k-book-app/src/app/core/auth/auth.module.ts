@@ -8,7 +8,8 @@ import { SharedModule } from '../../components/components.module';
 import { RegistroComponent } from './registro/registro.component';
 import{PerfilComponent}from './perfil/perfil.component';
 import { SelectPorpouseComponent } from './select-porpouse/select-porpouse.component';
- 
+import {ReactiveFormsModule} from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SelectPorpouseComponent } from './select-porpouse/select-porpouse.compo
   imports: [
     CommonModule,
     AuthRoutingModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule,
   ]
 })
 export class AuthModule { }

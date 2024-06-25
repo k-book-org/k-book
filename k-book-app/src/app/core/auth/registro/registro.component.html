@@ -7,14 +7,14 @@
       <div class="w-full mb-6">
         <h3 class="text-center">Crea una cuenta</h3>
       </div>
-      <form class="grid grid-rows-3 gap-5">
-        <app-input-field [label]="'Nombre de Usuario'" [type]="'text'"/>
+      <form class="grid grid-rows-3 gap-5" [formGroup]="miFormulario"  (ngSubmit)="onSubmit()">
+        <app-input-field [label]="'Nombre de Usuario'" [type]="'text'" [control]="username"/>
         <app-input-field [label]="'Nombre de Instituci&oacute;n'" [type]="'text'"/>
-        <app-input-field [label]="'Grado de Estudio'" [type]="'text'"/>
-        <app-input-field [label]="'Fecha de cumpleaños'" [type]="'date'"/>
-        <app-input-field [label]="'Email'" [type]="'email'"/>
-        <app-password-field [label]="'Contraseña'"/>
-        <app-password-field [label]="'Confirme su Contraseña'"/>
+        <app-input-field [label]="'Grado de Estudio'" [type]="'text'" [control]="gradoEstudio"/>
+        <app-input-field [label]="'Fecha de cumpleaños'" [type]="'date'" [control]="birthday"/>
+        <app-input-field [label]="'Email'" [type]="'email'" [control]="email"/>
+        <app-password-field [label]="'Contraseña'" [control]="password"/>
+        <app-password-field [label]="'Confirme su Contraseña'" [control]="password2"/>
         <app-button [text]="'Registrarse'"/>
       </form>
       <div class="w-full grid">
