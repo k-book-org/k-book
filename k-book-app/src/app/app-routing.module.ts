@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
-import { EspacioDeTrabajoComponent } from './core/aprendizaje/espacio-de-trabajo/espacio-de-trabajo.component';
 
 const routes: Routes = [
   { path: 'auth', loadChildren: () => import('./core/auth/auth.module').then(m => m.AuthModule) },
