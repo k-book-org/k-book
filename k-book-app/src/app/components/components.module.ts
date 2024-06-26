@@ -13,7 +13,6 @@ import { BtnPerfilInteractionComponent } from './btn-perfil-interaction/btn-perf
 import { EditFieldInputComponent } from './edit-field-input/edit-field-input.component';
 import { UserstadisticsComponent } from './userstadistics/userstadistics.component';
 import { ItemPreguntaComponent } from './item-pregunta/item-pregunta.component';
-import { MiniBuscadorComponent } from './mini-buscador/mini-buscador.component';
 import { BuscadorComponent } from './buscador/buscador.component';
 import {ActividadPreguntasComponent} from './actividad-preguntas/actividad-preguntas.component'
 import { EtiquetaComponent } from './etiqueta/etiqueta.component';
@@ -32,7 +31,6 @@ import {ReactiveFormsModule} from '@angular/forms';
     EditFieldInputComponent,
     UserstadisticsComponent,
     ItemPreguntaComponent,
-    MiniBuscadorComponent,
     BuscadorComponent,
     ActividadPreguntasComponent,
     EtiquetaComponent,
@@ -54,7 +52,6 @@ import {ReactiveFormsModule} from '@angular/forms';
     EditFieldInputComponent,
     UserstadisticsComponent,
     ItemPreguntaComponent,
-    MiniBuscadorComponent,
     BuscadorComponent,
     ActividadPreguntasComponent,
 
