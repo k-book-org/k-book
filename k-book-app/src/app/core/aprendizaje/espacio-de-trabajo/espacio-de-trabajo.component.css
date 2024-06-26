@@ -1,10 +1,9 @@
 .main-container {
   background-color: #011E2C;
 }
-
+ 
 .container {
   display: flex;
-  height: 100vh;
 }
 
 .documentacion {

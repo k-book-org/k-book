@@ -35,7 +35,7 @@
     color: green;
     font-family: monospace;
     padding: 8px;
-    resize: vertical;
+    resize: none;
 }
 
 .output-textarea:focus {

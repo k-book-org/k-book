@@ -6,18 +6,18 @@
   }
   
   .editor-textarea {
-    width: 58%;
+    width: 68%;
     height: 300px;
     border: 1px solid #011E2C; 
     background-color: #011E2C; 
     color: white;
     font-size: 14px;
     padding: 8px;
-    resize: vertical;
+    resize: none;
   }
    
   .editor-textarea:focus {
-    outline: none; /* Elimina el contorno al enfocar */
-    border-color: #66afe9; /* Cambia el color del borde al enfocar */
+    outline: none; 
+    border-color: #66afe9;
   }
   
