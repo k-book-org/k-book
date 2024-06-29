@@ -5,16 +5,25 @@
     <app-logo></app-logo>
     <div class="content-new m-auto col-span-11">
       <div class="w-full mb-6">
-        <h3 class="text-center">Crea una cuenta</h3>
+        <h3 class="text-center">Crea una cuenta</h3> 
       </div>
       <form class="grid grid-rows-3 gap-5" [formGroup]="miFormulario"  (ngSubmit)="onSubmit()">
         <app-input-field [label]="'Nombre de Usuario'" [type]="'text'" [control]="username"/>
+        <p *ngIf="usernameControl?.invalid && usernameControl?.dirty">
+          El nombre de usuario es obligatorio
+        </p>
         <app-input-field [label]="'Nombre de Instituci&oacute;n'" [type]="'text'"/>
         <app-input-field [label]="'Grado de Estudio'" [type]="'text'" [control]="gradoEstudio"/>
         <app-input-field [label]="'Fecha de cumpleaños'" [type]="'date'" [control]="birthday"/>
         <app-input-field [label]="'Email'" [type]="'email'" [control]="email"/>
+        <p *ngIf="emailControl?.invalid && emailControl?.dirty">
+          El email es obligatorio
+        </p>
         <app-password-field [label]="'Contraseña'" [control]="password"/>
         <app-password-field [label]="'Confirme su Contraseña'" [control]="password2"/>
+        <p *ngIf="password2?.invalid && password2?.dirty">
+          Las claves deben ser iguales
+        </p>
         <app-button [text]="'Registrarse'"/>
       </form>
       <div class="w-full grid">
